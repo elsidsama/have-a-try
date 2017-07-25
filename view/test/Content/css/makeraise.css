@@ -1,0 +1,1115 @@
+﻿body {
+    font-family: "Helvetica Neue",Helvetica,"Lucida Grande",Arial,"Hiragino Sans GB","微软雅黑","WenQuanYi Micro Hei",STHeiti,SimSun,sans-serif;
+    width:100%;
+    max-width:440px;
+}
+
+.contain {
+    width: 100%;
+    padding: 0 15px;
+}
+
+/*填写信息*/
+.contain_title {
+    width: 100%;
+    margin-top: 1.4rem;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .contain_title span {
+        color: #333333;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+.contain_title2 {
+    width: 100%;
+    line-height: 11px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .contain_title2 span {
+        color: #888888;
+        font-size: 1rem;
+    }
+
+.contain_flag {
+    width: 100%;
+    margin-top: 15px;
+}
+
+    .contain_flag div {
+        width: 15%;
+        background-color: #ff6c63;
+        height: 0.5rem;
+    }
+
+
+.contain_body {
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 80%;
+    text-align: center;
+    border-bottom: 1px solid #cccccc;
+    padding: 2px 0;
+}
+
+    .contain_body table {
+        width: 100%;
+    }
+
+
+.body_left {
+    width: 90%;
+}
+
+    .body_left > input {
+        width: 100%;
+        border: none;
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+.body_right {
+    width: 10%;
+}
+
+    .body_right img {
+        width: 50%;
+        display: none;
+        margin: 0 auto;
+    }
+
+.imgclear {
+    width: 20px;
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    float: right;
+    display: none;
+}
+
+.mr-flightno {
+    position: relative;
+}
+
+    .mr-flightno input {
+        width: 100%;
+        border: none;
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+
+.body_left > input:focus {
+    border: none;
+}
+
+.mr-flightno > input[disabled], .mr-flightno > input:disabled {
+    background: #FFFFFF;
+    color: #333333;
+}
+
+
+.mr-flightno > inputinput::-webkit-input-placeholder {
+    color: #888888;
+    font-size: 1.2rem;
+}
+
+.contain_search {
+    width: 80%;
+    text-align: right;
+    margin: 0 auto;
+    padding-top: 0.2rem;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .contain_search span {
+        font-size: 0.8rem;
+        color: #888888;
+    }
+
+.contain_warn {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 0.8rem;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .contain_warn table {
+        width: 100%;
+    }
+
+.warn_span {
+    color: #1aa97b;
+}
+
+input[type="checkbox"] {
+    margin-right: 1px;
+}
+
+
+
+.contain_foot {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.btn_next {
+    width: 80%;
+    text-align: center;
+    background-color: #1aa97b;
+    margin: 0 auto;
+    border-radius: 5px;
+    line-height: 3rem;
+}
+
+    .btn_next span {
+        font-size: 1.2rem;
+        color: #FFFFFF;
+    }
+
+
+/*搜索航班*/
+
+.city {
+    margin-top: 10%;
+    width: 100%;
+    color: #999999;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.cityleft {
+    float: left;
+    text-align: left;
+}
+
+
+.cityright {
+    float: right;
+    text-align: right;
+}
+
+.citytext {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #999999;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/*城市对*/
+
+
+.flightDiv {
+    margin-top: 15px;
+    color: #333333;
+}
+
+.flightDiv2 {
+    border-bottom: 1px solid #dedede;
+}
+
+.fleft {
+    float: left;
+    width: 40%;
+    text-align: left;
+}
+
+.fcenter {
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+.fcImg {
+    margin: 0 auto;
+    width: 40%;
+}
+
+.fright {
+    width: 40%;
+    float: right;
+    text-align: right;
+}
+
+.inputCity1 {
+    width: 100%;
+    border: 0px;
+    color: #333333;
+    font-size: 1.5rem;
+}
+
+.inputCity2 {
+    width: 100%;
+    border: 0px;
+    color: #333333;
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.inputCity3 {
+    width: 100%;
+    border: 0px;
+    color: #333333;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+
+
+/*日期*/
+
+.fdateDiv {
+    margin-top: 5%;
+    color: #333333;
+}
+
+
+.fdate {
+    border-bottom: 1px solid #dedede;
+}
+
+
+.fdata1 {
+    float: left;
+}
+
+
+.btnDiv {
+    margin-top: 10%;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.btnPost {
+    color: #FFFFFF;
+    background-color: #1aa97b;
+    width: 100%;
+    margin: 0 auto;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #1aa97b;
+    font-size: 1.2rem;
+}
+
+    .btnPost:active {
+        background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#1aa97b), to(#0d9da6)); /*谷歌*/
+        background-image: -webkit-gradient(linear,left bottom,left top,color-start(0, #1aa97b),color-stop(1, #0d9da6)); /* Safari & Chrome*/
+    }
+
+
+/*选择出发到达城市*/
+
+
+/*顶部搜索框*/
+
+.inputCity {
+    width: 100%;
+    border: none;
+    color: #333333;
+    font-size: 1.2rem;
+}
+
+input.inputCity::-webkit-input-placeholder {
+    color: #888888;
+    font-size: 1.2rem;
+}
+
+.searchDiv {
+    text-align: center;
+    margin: 0;
+    padding-top: 1.4rem;
+}
+
+.search_border {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px 0;
+    border: 1px solid #888888;
+    border-radius: 15px;
+}
+
+    .search_border table {
+        width: 100%;
+    }
+
+.sleft {
+}
+
+    .sleft img {
+        margin-left: 10px;
+        width: 1.8rem;
+        margin: 0 auto;
+        margin-left: 10px;
+    }
+
+.sright {
+    width: 85%;
+    float: left;
+    margin-left: 10px;
+    height: 25px;
+}
+
+
+.topImg2 {
+    width: 50%;
+    display: none;
+    margin: 0 auto;
+}
+
+/*输入框的检索*/
+.typeahead {
+    padding-left: 0px;
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: 99999;
+    width: 60%;
+    border: 1px solid #cccccc;
+}
+
+    .typeahead li {
+        color: #333333;
+        list-style-type: none;
+        text-decoration: none;
+        text-align: left;
+        margin-left: 10px;
+        border-bottom: 1px solid #f4f4f4;
+    }
+
+.dropdown-item {
+    text-decoration: none;
+    color: #333333;
+}
+
+
+
+/*城市列表*/
+
+.main {
+    margin-top: 2rem;
+}
+
+.letter {
+    font-size: 20px;
+}
+
+
+.letter2 {
+    font-size: 20px;
+}
+
+
+
+.leftMain {
+    width: 100%;
+    float: left;
+}
+
+
+.ulCity {
+    overflow: hidden;
+    width: 90%;
+    padding-right: 10px;
+    padding: 0;
+}
+
+    .ulCity li {
+        list-style-type: none;
+        display: block;
+        width: 33.333%;
+        float: left;
+        line-height: 25px;
+        padding: 5px 0px;
+    }
+
+        .ulCity li a {
+            width: 80%;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 4% 20%;
+            font-size: 14px;
+            margin: 0 auto;
+            color: #999999;
+            border: 1px solid #666666;
+        }
+
+            .ulCity li a:hover {
+                color: #FFFFFF;
+                border: 1px solid #1aa97b;
+                background-color: #1aa97b;
+            }
+
+
+.ulItem {
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+    .ulItem li {
+        width: 85%;
+        padding: 10px 0px;
+        float: left;
+        list-style-type: none;
+        display: block;
+        text-align: left;
+        border-bottom: 1px solid #999999;
+    }
+
+
+        .ulItem li a {
+            width: 100%;
+            float: left;
+            text-decoration: none;
+            color: #666666;
+            display: block;
+        }
+
+
+.rightMain {
+    width: 8%;
+    float: right;
+    position: fixed;
+    /*overflow-y: scroll;*/
+    right: 0;
+    top: 4.5rem;
+}
+
+.ulDiv {
+}
+
+
+
+/*城市导航*/
+.ulCity2 {
+    padding-left: 0px;
+}
+
+    .ulCity2 li {
+        list-style-type: none;
+        display: block;
+        width: 100%;
+        float: right;
+        text-align: center;
+        color: #1aa97b;
+        line-height: 1.4;
+    }
+
+        .ulCity2 li a {
+            text-decoration: none;
+            color: #1aa97b;
+            width:100%;
+            display:block;
+        }
+
+            .ulCity2 li a:visited {
+                color: #1aa97b;
+            }
+
+            .ulCity2 li a:active {
+                color: #1aa97b;
+            }
+
+
+/*选择航班列表*/
+
+.link {
+    text-decoration: none;
+}
+
+.hide {
+    text-decoration: none;
+    display: none;
+}
+
+
+
+.flight {
+    width: 100%;
+    margin: 0;
+    background-color: #FFFFFF;
+    margin-bottom: 2%;
+    border-bottom: 1px solid #cccccc;
+}
+
+.fno {
+    color: #1aa97b;
+    width: 20%;
+    text-align: center;
+    line-height: 25px;
+    padding-top: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.stime {
+    color: #333333;
+    font-size: 1.2rem;
+    width: 20%;
+    text-align: center;
+    padding-top: 8px;
+    line-height: 25px;
+}
+
+
+.mplane {
+    width: 20%;
+    text-align: center;
+    line-height: 25px;
+}
+
+.planeImg {
+    margin: 0 auto;
+    width: 100%;
+    height: 15px;
+}
+
+.etime {
+    color: #333333;
+    font-size: 1.2rem;
+    width: 20%;
+    text-align: center;
+    padding-top: 8px;
+    line-height: 25px;
+}
+
+.fimg {
+    width: 20%;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: middle;
+    line-height: 25px;
+}
+
+.stime2 {
+    font-size: 0.5rem;
+    color: #999999;
+    width: 20%;
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+.etime2 {
+    font-size: 0.5rem;
+    color: #999999;
+    width: 20%;
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+.fimg2 {
+    width: 20%;
+    text-align: center;
+    overflow: hidden;
+    font-size: 0.5rem;
+    color: #999999;
+    padding-bottom: 2px;
+}
+
+.hsImg {
+    margin: 0 auto;
+    width: 40%;
+}
+
+.hsname {
+    font-size: 10px;
+    color: #999999;
+    text-align: center;
+}
+
+.lstFlight {
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+}
+
+
+/*底部*/
+.bottomDiv {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 3rem;
+    line-height: 3rem;
+    background-color: #dedede;
+    max-width:440px;
+}
+
+.btmleft {
+    width: 50%;
+    float: left;
+    position: relative;
+    color: #FFFFFF;
+    display: block;
+    border-right: 0.5px solid #dedede;
+}
+
+
+.btmright {
+    text-align: center;
+    width: 50%;
+    float: right;
+    position: relative;
+    color: #FFFFFF;
+    display: block;
+    border-left: 0.5px solid #dedede;
+}
+
+
+.btmtitle {
+    text-align: center;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    background: #1aa97b;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.selectItem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1111;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0.875rem;
+    color: #3AAE36;
+}
+
+
+#msg {
+    width: 60%;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    opacity: 0.6;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    position: fixed;
+    top: 45%;
+    left: 20%;
+    text-align: center;
+    display: none;
+    transition: display 2s;
+    -moz-transition: display 2s; /* Firefox 4 */
+    -webkit-transition: display 2s; /* Safari and Chrome */
+    -o-transition: display 2s; /* Opera */
+    z-index: 999;
+}
+
+
+
+/*弹窗样式*/
+
+.weui_dialog_title {
+    color: #333333;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.weui_bg {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.weui_dialog_hd {
+    border-bottom: 1px solid #dedede;
+    padding: .5em 20px;
+}
+
+
+.weui_dialog_confirm .weui_dialog .weui_dialog_bd {
+    text-align: center;
+    color: #333333;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    word-wrap: normal;
+}
+
+
+.weui_dialog_confirm .weui_dialog .weui_dialog_hd {
+    padding: 0.5rem;
+    line-height: 1.5rem;
+}
+
+.weui_dialog_ft a {
+    color: #FFFFFF;
+}
+
+
+.weui_dialog_ft {
+    margin-top: 10px;
+}
+
+    .weui_dialog_ft a {
+        color: #1aa97b;
+    }
+
+        .weui_dialog_ft a:active {
+            background-color: #FFFFFF;
+            color: #1aa97b;
+        }
+
+.weui_dialog {
+    overflow: visible;
+    top: 35%;
+    border-radius: 5px;
+}
+
+
+
+.weui_left {
+    width: 100%;
+    text-align: center;
+}
+
+.weui_right img {
+    width: 20px;
+}
+
+.weui_top_btn {
+    width: 100%;
+    height: 5px;
+    text-align: right;
+}
+
+    .weui_top_btn img {
+        width: 20px;
+        margin-right: -8px;
+        margin-top: -15px;
+    }
+
+
+/*投保须知*/
+
+
+.policyInfo {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.policy_bg {
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    filter: alpha(opacity=0);
+    opacity: 0.7;
+    background: #333333;
+    z-index: 900;
+    left:0;
+    top:0;
+}
+
+
+.policy_body {
+    position: fixed;
+    z-index: 999;
+    top: 8%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 10%;
+    overflow: hidden;
+    height: 90%;
+    z-index: 999;
+}
+
+.body_title {
+    font-size: 1.5rem;
+    text-align: center;
+    background: #FFFFFF;
+    color: #333333;
+    padding: 10px 15px;
+    line-height: 1.5rem;
+    border-bottom: 1px solid #dedede;
+}
+
+
+.body_content {
+    background: #FFFFFF;
+    font-size: 1.2rem;
+    overflow-y: scroll;
+    height: 90%;
+    padding: 10px 15px;
+}
+
+    .body_content > table {
+        border: 0;
+        margin: 0;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+        .body_content > table tr {
+            border: 1px solid #cccccc;
+        }
+
+        .body_content > table td {
+            border: 1px solid #cccccc;
+        }
+
+
+.foot_btn {
+    height: 15%;
+    text-align: center;
+}
+
+    .foot_btn img {
+        margin: 0 auto;
+        width:15%;
+        position:relative;
+        top:5px;
+    }
+
+.weui_btn_dialog.primary {
+    color: #1aa97b;
+}
+
+
+.weui_btn_close {
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    top: -15px;
+    right: -10px;
+}
+
+.hotcity, .hotcity:visited, .hotcity:active, .hotcity:focus, .hotcity:hover {
+    color: #ff6c63;
+    text-decoration: none;
+}
+
+.flex-box-v {
+    overflow: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.mainlist {
+    position: absolute;
+    top: 110px;
+    bottom:45px;
+    overflow-y: scroll;
+}
+
+.flex-1 {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+}
+
+
+/*多段*/
+
+.multiDiv {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: 0 auto;
+    top: 20%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    z-index: 9999;
+}
+
+    .multiDiv .title {
+        width: 100%;
+        background: #1aa97b;
+        text-align: center;
+        position: relative;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        z-index: 9999;
+    }
+
+        .multiDiv .title .dele {
+            position: absolute;
+            right: -12px;
+            top: -12px;
+            width: 25px;
+            height: 25px;
+        }
+
+        .multiDiv .title table {
+            width: 100%;
+            text-align: center;
+            min-height: 80px;
+        }
+
+        .multiDiv .title .span1 {
+            font-size: 18px;
+            line-height: 18px;
+            color: #FFFFFF;
+            margin: 0;
+        }
+
+        .multiDiv .title .span2 {
+            font-size: 14px;
+            line-height: 14px;
+            padding-top: 3px;
+            color: #FFFFFF;
+            margin: 0;
+        }
+
+
+    .multiDiv .body {
+        background: #FFFFFF;
+        z-index: 9999;
+        position: relative;
+    }
+
+        .multiDiv .body table {
+            width: 100%;
+            z-index: 9999;
+        }
+
+            .multiDiv .body table td {
+                height: 50px;
+                border-bottom: 1px solid #dedede;
+            }
+
+            .multiDiv .body table .td1 {
+                padding-left: 20px;
+                width: 35%;
+                text-align:center;
+            }
+
+            .multiDiv .body table .td2 {
+                width: 20%;
+            }
+
+                .multiDiv .body table .td2 img {
+                    width: 100%;
+                }
+
+            .multiDiv .body table .td3 {
+                padding-left: 10px;
+                 text-align:center;
+                width: 25%;
+            }
+
+            .multiDiv .body table .td4 {
+                width: 20%;
+                padding-right: 20px;
+                text-align: right;
+            }
+
+                .multiDiv .body table .td4 img {
+                    width: 15px;
+                    height: 15px;
+                }
+
+
+    .multiDiv .foot {
+        text-align: center;
+        z-index: 9999;
+        position: relative;
+        padding: 20px 0;
+        background: #FFFFFF;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+        .multiDiv .foot .btnNext {
+            width: 80%;
+            background: #dedede;
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0 auto;
+            border-radius: 5px;
+            padding: 5px 0;
+            color: #FFFFFF;
+        }
+@media only screen and (min-width:440px){
+    body {
+       position:relative;
+       margin: 0 auto;
+    }
+    .bottomDiv {
+        left:50%;
+        margin-left:-220px;
+    }
+    .mainlist {
+        height:300px;
+        overflow-y:auto;
+    }
+    .foot_btn img {
+            margin: 0 auto;
+            width: auto;
+            height:70%;
+            top: 0px;
+            position: relative;
+        }
+}
+@media only screen and (min-width:440px) and (min-height:736px){
+    .mainlist {
+        height:550px;
+        overflow-y:auto;
+    }
+}
+@media only screen and (min-width:440px) and (min-height:540px)and (max-height:736px){
+    .mainlist {
+        height:400px;
+        overflow-y:auto;
+    }
+}

@@ -1,0 +1,174 @@
+﻿
+body {
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
+    font-family: "Helvetica Neue",Helvetica,"Lucida Grande",Arial,"Hiragino Sans GB","微软雅黑","WenQuanYi Micro Hei",STHeiti,SimSun,sans-serif;
+    /*background-color:#e5e5e5;*/
+}
+
+
+.contain2 {
+
+    background-color: #FFFFFF;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+.top {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.topimg {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+
+/*出发城市*/
+.city {
+    margin-top: 10%;
+    width: 100%;
+    color: #999999;
+}
+
+
+.cityleft {
+    float: left;
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+.cityright {
+    float: right;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.citytext {
+   
+    font-size: 12px;
+    font-weight: 500;
+    color: #999999;
+}
+
+
+/*城市对*/
+
+
+.flightDiv {
+     margin-top: 15px;
+     font-size: 20px;
+    padding: 0 20px;
+    color: #333333;
+    
+}
+
+.flightDiv2 {
+    border-bottom: 1px solid #dedede;
+
+}
+.fleft {
+    float: left;
+    width: 40%;
+    text-align: left;
+}
+
+.fcenter {
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+.fcImg {
+    margin: 0 auto;
+    width: 40%;
+}
+
+.fright {
+    width: 40%;
+    float: right;
+    text-align: right;
+}
+
+.inputCity1 {
+    width: 100%;
+    border: 0px;
+    color: #333333;
+    font-size: 22px;
+}
+
+.inputCity2 {
+    width: 100%;
+    border: 0px;
+    color: #333333;
+    font-size: 22px;
+    text-align: right;
+}
+
+.inputCity3 {
+    width: 100%;
+    border: 0px;
+    color: #333333;
+    font-size: 22px;
+    text-align: left;
+}
+
+
+
+/*日期*/
+
+.fdateDiv {
+    margin-top: 5%;
+    color: #333333;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+
+.fdate {
+    border-bottom: 1px solid #dedede;
+}
+
+
+.fdata1 {
+float:left;
+
+}
+
+
+
+
+.btnDiv {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.btnPost {
+    color: #FFFFFF;
+    background-color: #1aa97b;
+    width: 80%;
+     line-height: 40px;
+    margin: 0 auto;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+    border: 1px solid #1aa97b;
+    font-size: 20px;
+}
+
+.btnPost:active {
+
+background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#1aa97b), to(#0d9da6));/*谷歌*/
+background-image: -webkit-gradient(linear,left bottom,left top,color-start(0, #1aa97b),color-stop(1, #0d9da6));/* Safari & Chrome*/
+
+
+
+
+}
+
+

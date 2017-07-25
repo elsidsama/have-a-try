@@ -1,0 +1,287 @@
+body,
+ul,
+ol,
+p,
+h1,
+h2,
+h3,
+dl,
+dt,
+dd,
+li,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+}
+body {
+  text-align: left;
+  font-family: "Helvetica Neue", Helvetica, "Lucida Grande", Arial, "Hiragino Sans GB", "΢���ź�", "WenQuanYi Micro Hei", STHeiti, SimSun, sans-serif;
+  background-color: #FFF;
+  font-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  width: 100%;
+}
+ul,
+li,
+dl,
+dt,
+dd {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  padding: 0;
+}
+input,
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+img {
+  vertical-align: middle;
+}
+.none {
+  display: none!important;
+}
+.no-scroll {
+  overflow: hidden;
+}
+body {
+  background-color: #ffffff;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  max-width: 750px;
+  margin: 0 auto;
+  -webkit-text-size-adjust: 100% !important;
+  display: none;
+}
+section {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+section .round_mod {
+  width: 100%;
+  background-color: #1aa97b;
+  height: 14.45rem;
+  padding-top: 0.9rem;
+  overflow: hidden;
+}
+section .round_mod .round_title {
+  line-height: 1rem;
+  display: block;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+section .round_mod .canvas_R {
+  position: absolute;
+  left: 50%;
+  margin-left: -193px;
+  top: 3.4rem;
+}
+section .round_mod .percent_box {
+  width: 9.65rem;
+  height: 9.65rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -4.825rem;
+  top: 3.4rem;
+}
+section .round_mod .percent_box .text_top {
+  font-size: 3.55rem;
+  color: #ffffff;
+  text-align: center;
+  padding: 2.375rem 0 0.875rem 0;
+  height: 3.55rem;
+}
+section .round_mod .percent_box .text_bottom {
+  font-size: 0.75rem;
+  color: #ffffff;
+  text-align: center;
+}
+section .table_mod {
+  padding: 0 0.75rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+section .table_mod .table_title {
+  font-size: 0.75rem;
+  color: #333333;
+  width: 100%;
+  display: block;
+  margin: 1rem 0;
+  text-align: center;
+}
+section .table_mod .left_list {
+  display: block;
+  width: 1.8rem;
+  height: 10rem;
+  float: left;
+  overflow: hidden;
+}
+section .table_mod .left_list li {
+  width: 100%;
+  font-size: 0.5rem;
+  color: #333333;
+  height: 0.6rem;
+  overflow: hidden;
+  float: left;
+  margin-top: 1.05rem;
+  text-align: right;
+}
+section .table_mod .left_list li:first-child {
+  margin-top: 0.5rem;
+}
+section .table_mod .left_list li:last-child {
+  margin-top: 0.675rem;
+}
+section .table_mod .table_body {
+  width: 15.3rem;
+  padding-left: 0.1rem;
+  height: 9.25rem;
+  float: left;
+}
+section .table_mod .table_body .square_0 {
+  left: 0.15rem;
+}
+section .table_mod .table_body .square_1 {
+  left: 2.4rem;
+}
+section .table_mod .table_body .square_2 {
+  left: 4.65rem;
+}
+section .table_mod .table_body .square_3 {
+  left: 6.9rem;
+}
+section .table_mod .table_body .square_4 {
+  left: 9.15rem;
+}
+section .table_mod .table_body .square_5 {
+  left: 11.4rem;
+}
+section .table_mod .table_body .square_6 {
+  left: 13.65rem;
+}
+section .table_mod .table_body .square_text {
+  color: #ff6c63;
+  text-align: center;
+  display: block;
+  width: 100%;
+  float: left;
+  font-size: 0.45rem;
+}
+section .table_mod .table_body .square_body {
+  width: 1.25rem;
+  height: 1px;
+  margin-left: 0.275rem;
+  float: left;
+  background-color: #ffa29d;
+}
+section .table_mod .table_body .body_top {
+  width: 100%;
+  height: 7.375rem;
+  float: left;
+  border-bottom: 1px solid #e5d2d1;
+  position: relative;
+}
+section .table_mod .table_body .body_top .line {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: #e5d2d1;
+}
+section .table_mod .table_body .body_top .line_1 {
+  bottom: 1.65rem;
+}
+section .table_mod .table_body .body_top .line_2 {
+  bottom: 3.3rem;
+}
+section .table_mod .table_body .body_top .line_3 {
+  bottom: 4.95rem;
+}
+section .table_mod .table_body .body_top .line_4 {
+  bottom: 6.6rem;
+}
+section .table_mod .table_body .body_top .square {
+  width: 1.8rem;
+  position: absolute;
+  bottom: 0;
+  display: none;
+  z-index: 1900;
+}
+section .table_mod .table_body .body_top .square_body {
+  border-top: 0.1rem solid #ff736b;
+}
+section .table_mod .table_body .body_top .cancel_btn {
+  width: 1.25rem;
+  height: 0.7rem;
+  background-color: #ffda5e;
+  display: block;
+  margin-left: 0.275rem;
+  float: left;
+  font-size: 0.45rem;
+  line-height: 0.7rem;
+  text-align: center;
+}
+section .table_mod .table_body .body_bottom {
+  width: 100%;
+  height: 1.8rem;
+  float: left;
+  position: relative;
+}
+section .table_mod .table_body .body_bottom .line {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: #e5d2d1;
+  top: 1.25rem;
+}
+section .table_mod .table_body .body_bottom .square {
+  width: 1.8rem;
+  position: absolute;
+  top: 0;
+  display: none;
+  z-index: 1900;
+}
+section .table_mod .table_body .body_bottom .square_text {
+  color: #1aa97b;
+}
+section .table_mod .table_body .body_bottom .square_body {
+  background-color: #6ec9ac;
+  border-bottom: 0.1rem solid #1aa97b;
+}
+section .table_mod .bottom_list {
+  width: 15.4rem;
+  height: 0.75rem;
+  float: left;
+}
+section .table_mod .bottom_list li {
+  display: block;
+  float: left;
+  color: #555555;
+  text-align: left;
+  width: 2.25rem;
+  height: 100%;
+  font-size: 0.45rem;
+  line-height: 0.6rem;
+}
+section .table_mod .bottom_list li:first-child {
+  margin-left: 0.375rem;
+}
+section .table_mod .bottom_list li:last-child {
+  width: 1.5rem;
+}

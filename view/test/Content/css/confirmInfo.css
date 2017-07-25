@@ -1,0 +1,625 @@
+﻿
+
+body {
+    background: #f4f4f4;
+    margin: 0;
+    max-width: 440px;
+}
+
+.none {
+        display:none!important;
+    }
+
+.no-scroll {
+    overflow: hidden;
+    height: 100%;
+}
+
+.contain {
+    padding: 0 15px;
+    padding-bottom: 1rem;
+    background-color: #FFFFFF;
+    padding-top: 1.4rem;
+}
+
+
+.contain_title {
+    width: 100%;
+}
+
+    .contain_title span {
+        color: #333333;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+.contain_title2 {
+    width: 100%;
+    line-height: 11px;
+}
+
+    .contain_title2 span {
+        color: #888888;
+        font-size: 1rem;
+    }
+
+.contain_flag {
+    width: 100%;
+    margin-top: 15px;
+}
+
+    .contain_flag div {
+        width: 15%;
+        background-color: #ff6c63;
+        height: 0.5rem;
+    }
+
+
+.contain_cut {
+    width: 100%;
+    height: 0.8rem;
+    background-color: #f4f4f4;
+}
+
+
+.contain_body {
+    padding: 10px 15px;
+    background-color: #FFFFFF;
+}
+
+.body_title {
+    width: 100%;
+    color: #333333;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+    .body_title img {
+        margin-left: 5px;
+        width: 20px;
+    }
+
+.body_title2 {
+    width: 100%;
+    color: #555555;
+    font-size: 1rem;
+}
+
+.body_psg {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #dedede;
+}
+
+    .body_psg table {
+        width: 100%;
+    }
+
+.body_flight {
+    width: 100%;
+    padding: 10px 0;
+}
+
+    .body_flight table {
+        width: 100%;
+    }
+
+.psg_left {
+    width: 10%;
+}
+
+    .psg_left img {
+        width: 30px;
+        height: 32px;
+        margin: 0 auto;
+    }
+
+.psg_right {
+    width: 90%;
+    padding: 0px;
+    padding-left: 15px;
+}
+
+.body_info {
+    width: 100%;
+    font-size: 1.2rem;
+    color: #888888;
+}
+
+
+.psg_head {
+    width: 100%;
+    font-size: 1rem;
+    color: #333333;
+    font-weight: bold;
+}
+
+.psg_foot {
+    font-size: 1rem;
+    color: #555555;
+}
+
+/*优惠券*/
+
+.reduce_part {
+    padding: 10px 20px 10px 15px;
+    background-color: #FFFFFF;
+    height:45px;
+    overflow:hidden;
+}
+.reduce_l{
+    font-size:19px;
+    font-weight:bolder;
+    color:#333333;
+    float:left;
+}
+.reduce_l em {
+    font-style:normal;
+    display:inline-block;
+    font-size:11px;
+    background-color:#ff6c63;
+    color:#ffffff;
+    line-height:15px;
+    height:16px;
+    padding:2px 9px;
+    border-radius:3px;
+    margin-left:7px;
+    position:relative;
+    top:-1px;
+}
+.reduce_l i {
+    font-style:normal;
+}
+.reduce_r {
+    float:right;
+    line-height:25px;
+    font-size:12px;
+    color:#888888;
+}
+    .reduce_r em {
+        font-style:normal;
+    }
+    .reduce_r .price_r {
+        color:#ff6c63;
+        font-size:14px;    
+    }
+    .reduce_r i {
+        background:url("/Content/images/arrow.png") no-repeat center;
+        background-size:contain;
+        display: inline-block;
+        width: 16px;
+        height: 20px;
+        position:relative;
+        top:4px;
+        margin-left:11px;
+    }
+/*自购份数*/
+
+.contain_body2 {
+    padding: 10px 15px;
+    background-color: #FFFFFF;
+}
+
+.body2_content {
+    /*padding: 5px 0;*/
+}
+
+.body2_title {
+    float: left;
+    color: #333333;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    width: 100%;
+}
+
+.body2_title2 {
+    color: #888888;
+    font-size: 0.8rem;
+}
+
+.body2_count {
+    float: left;
+    width: 50%;
+}
+
+    .body2_count > .left {
+        float: left;
+        width: 15%;
+    }
+
+        .body2_count > .left img {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+    .body2_count > .center {
+        float: left;
+        width: 70%;
+        text-align: center;
+    }
+
+        .body2_count > .center input {
+            border: 1px solid #f4f4f4;
+            border-radius: 5px;
+            padding: 0.2rem 0;
+            margin: 0 auto;
+            width: 95%;
+            text-align: center;
+        }
+
+
+    .body2_count > .right {
+        float: left;
+        width: 15%;
+    }
+
+        .body2_count > .right img {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+
+
+/*理赔方式*/
+.contain_body3 {
+    padding: 10px 15px;
+    background-color: #FFFFFF;
+}
+
+.body3_title {
+    color: #333333;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    font-weight: bolder;
+}
+
+.body3_content {
+    width: 100%;
+    padding-top: 10px;
+}
+
+    .body3_content table {
+        width: 100%;
+    }
+
+.body3_left {
+    width: 90%;
+}
+
+.body3_right {
+    width: 10%;
+    text-align: center;
+}
+
+.claimtype {
+    color: #333333;
+    font-size: 1.1rem;
+}
+
+.claiminfo {
+    color: #888888;
+    font-size: 12px;
+}
+
+
+.contain_foot {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    z-index: 999;
+    padding: 10px 15px;
+    background-color: #FFFFFF;
+    max-width: 440px;
+}
+
+
+
+
+.footleft {
+    width: 50%;
+    /*float: left;*/
+    font-size: 1.2rem;
+    color: #333333;
+}
+
+.footleft_span {
+    font-size: 1.1rem;
+    color: #ff6c63;
+}
+
+
+.footleft_span2 {
+    font-size: 1.4rem;
+    color: #ff6c63;
+}
+
+.footright {
+    width: 50%;
+    /*float: left;*/
+    background-color: #1aa97b;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0.5rem 0;
+}
+
+
+    .footright span {
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+        color: #FFFFFF;
+        margin: 0 auto;
+    }
+
+
+
+/*投保须知*/
+
+
+
+
+
+.policyInfo {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+
+.policy_bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    filter: alpha(opacity=90%);
+    opacity: 0.9;
+    background: #333333;
+    z-index: 1900;
+    left: 0;
+    top: 0;
+}
+
+
+.policy_body {
+    position: fixed;
+    top: 8%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 10%;
+    overflow: hidden;
+    height: 90%;
+    z-index: 9999;
+}
+
+.policy_title {
+    font-size: 1.5rem;
+    text-align: center;
+    background: #FFFFFF;
+    color: #333333;
+    padding: 10px 15px;
+    line-height: 1.5rem;
+    border-bottom: 1px solid #dedede;
+}
+
+
+.policy_content {
+    background: #FFFFFF;
+    font-size: 1.2rem;
+    overflow: scroll;
+    height: 90%;
+    padding: 10px 15px;
+}
+
+    .policy_content > table {
+        border: 0;
+        margin: 0;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+        .policy_content > table tr {
+            border: 1px solid #cccccc;
+        }
+
+        .policy_content > table td {
+            border: 1px solid #cccccc;
+        }
+
+.foot_btn {
+    height: 15%;
+    text-align: center;
+}
+
+    .foot_btn img {
+        margin: 0 auto;
+        width: 15%;
+        position: relative;
+        top: 5px;
+    }
+
+
+.bg_info {
+    width: 25px;
+    padding: 2px;
+    height: 25px;
+    float: left;
+    margin-left: 15px;
+}
+
+.bg_info_img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size: 20px;
+    background: url('/Content/images/delay/info.png') no-repeat;
+}
+
+
+.contain_body4 {
+    padding: 10px 15px;
+    background-color: #FFFFFF;
+}
+
+
+.body4_head {
+    width: 100%;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #dedede;
+}
+
+
+    .body4_head > .left {
+        float: left;
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+        color: #333333;
+        font-weight: bolder;
+    }
+
+    .body4_head > .right {
+        float: right;
+        font-size: 1rem;
+        color: #888888;
+    }
+
+.body_info td {
+    line-height: 1.6;
+}
+
+.body_info_left {
+    width: 90%;
+    font-size: 1rem;
+    color: #555555;
+}
+.reduce_box {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: #f4f4f4;
+    display:none;
+}
+.reduce_box .reduce_title{
+    width:100%;
+    height:52px;
+    background-color:#ffffff;
+    text-align:center;
+    line-height:52px;
+    font-size:18px;
+    position:relative;
+}
+.reduce_title .closes {
+    display:block;
+    background: url('/Content/images/close0405.png') no-repeat center;
+    background-size:contain;
+    width:15px;
+    height:15px;
+    position:absolute;
+    top:19px;
+    right:18px;
+}
+.ticket_box{
+    width:100%;    
+    height:84px;
+    margin-top:10px;
+    background-color:#ffffff;
+}
+.ticket_box .left_btn{
+    width:54px;
+    height:100%;
+    float:left;
+}
+    .ticket_box .left_btn i {
+        display:block;
+        width:22px;
+        height:22px;
+        position:relative;
+        left:18px;
+        top:31px;
+        border:1px solid #e0e0e0;
+        border-radius:50%;
+    }
+    .now .left_btn i {
+        border:0;
+        background: url('/Content/images/gou0405.png') no-repeat center;
+        background-size:contain;
+    }
+    .ticket_box p {
+        margin:0;
+    }
+    .ticket_box .num {
+        font-size:18px;
+        color:#ff6c63;
+        line-height:38px;   
+        display:block;
+    }
+    .ticket_box .full_num {
+        font-size:14px;
+        color:#333333;
+        line-height:18px;   
+        display:block;
+        font-weight:800;
+    }
+    .ticket_box .deadline {
+        font-size:12px;
+        color:#888888;
+        line-height:16px;   
+        display:block;
+    }
+    .unable .num,.unable .full_num,.deadline{
+        color:#999999;
+    }
+.no_ticket {
+    width:100%;
+    margin-top:40px;
+    height:124px;
+    background: url('/Content/images/fly0405.png') no-repeat center;
+    background-size:contain;
+}
+.reduce_box .confirm{
+    position:absolute;
+    width:100%;
+    bottom:0;
+    left:0;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    background-color:#1aa97b;
+    font-size:18px;
+    color:#ffffff;
+    font-weight:600;
+}
+@media only screen and (min-width:440px){
+    body {
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .contain_foot {
+        margin: 0 auto;
+    }
+
+    .foot_btn img {
+        margin: 0 auto;
+        width: auto;
+        height: 70%;
+        top: 0px;
+        position: relative;
+    }
+    .reduce_box{
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width:440px) and (min-height:736px) {
+    .contain_foot {
+        position: absolute;
+    }
+}

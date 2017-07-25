@@ -1,0 +1,290 @@
+﻿
+
+/* 如需判断横屏竖屏，请使用orientation元素：portrait、landscape*/
+
+@scale_issue: 2.5;
+
+.less_issue(@scale_issue) {
+
+    .img_issue img {
+        width: @scale_issue*1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* iphone4、4s、5 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-min-device-pixel-ratio : 2) {
+     .less_issue(2.5);
+}
+
+
+/* iPhone6 */
+@media screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio : 2) {
+    .less_issue(3);
+}
+
+
+/* iPhone6 Plus */
+@media screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio : 3) {
+    .less_issue(2.5);
+}
+
+/* 魅族 */
+@media only screen and (min-device-width :1080px) and (-webkit-min-device-pixel-ratio : 2.5) {
+}
+
+/* mate7 */
+@media only screen and (min-device-width :1080px) and (-webkit-min-device-pixel-ratio : 3) {
+}
+
+
+/* ipad竖屏 */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+}
+
+/* ipad横屏 */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.contain {
+    width: 100%;
+    height: 100%;
+    background: url("/Content/images/delay/index.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    margin: 0;
+    overflow: hidden;
+}
+
+.bg_img {
+    margin: 0;
+}
+
+.bg_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.img_issue {
+    position: absolute;
+    top: 1em;
+    right: 15px;
+    z-index: 999;
+}
+
+
+
+.contain2 {
+    margin: 0;
+    padding: 0px 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    right: 0;
+}
+
+.div_img {
+    margin-top: 2em;
+    text-align: center;
+    z-index: 999;
+    width: 100%;
+}
+
+.div_img img {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.div_img2 {
+    margin-top: 2em;
+    text-align: center;
+    z-index: 999;
+    width: 100%;
+}
+
+.div_img2 img {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.div_img3 {
+    margin-top: 2rem;
+    text-align: center;
+    z-index: 999;
+    width: 100%;
+}
+
+.div_img3 img {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.div_img4 {
+    margin-top: 0.5em;
+    text-align: center;
+    z-index: 999;
+    width: 100%;
+}
+
+.div_img4 img {
+    margin: 0 auto;
+    width: 50%;
+}
+
+
+.left_img {
+    position: absolute;
+    top: 30%;
+    left: 15px;
+    z-index: 900;
+}
+
+.left_img img {
+    width: 40%;
+}
+
+.right_img {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    z-index: 900;
+    text-align: right;
+}
+
+.right_img img {
+    width: 40%;
+}
+
+/*滑动图层*/
+
+.slipDiv {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+
+.slip_bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity: 0.7;
+    background: #333333;
+    z-index: 999;
+}
+
+.slipImg {
+    position: relative;
+    z-index: 999;
+    margin-top: 15%;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+
+.btnRaiseDiv {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.btnRaise {
+    margin: 0 auto;
+    width: 50%;
+    border: 1px solid #ff6c63;
+    border-radius: 20px;
+    line-height: 2rem;
+    color: #ff6c63;
+    font-size: 1rem;
+}
+
+
+.slip_dele {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    width: 20px;
+    z-index: 999999;
+    height: 20px;
+}
+
+.slip_dele img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/*Bootrap*/
+.carousel {
+    z-index: 99999;
+}
+
+.carousel-control.right {
+    display: none;
+}
+
+.carousel-control.left {
+    display: none;
+}
+
+.carousel-indicators li {
+    border: 1px solid #ff6c63;
+}
+
+.carousel-indicators .active {
+    background: #ff6c63;
+}
+
+.carousel {
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.flickerplate .arrow-navigation.left {
+    display: none;
+}
+
+.flickerplate .arrow-navigation.right {
+    display: none;
+}
+
+.ui-loader {
+    display: none;
+}
+
+.carousel-indicators li {
+    width: 8px;
+    height: 8px;
+}
+
+.carousel-indicators .active {
+    width: 10px;
+    height: 10px;
+}
+
+.carousel-indicators {
+    bottom: 0;
+}

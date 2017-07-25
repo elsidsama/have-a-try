@@ -1,0 +1,464 @@
+﻿
+
+body {
+    font-family: "Helvetica Neue",Helvetica,"Lucida Grande",Arial,"Hiragino Sans GB","微软雅黑","WenQuanYi Micro Hei",STHeiti,SimSun,sans-serif;
+    background: #f4f4f4;
+    max-width: 500px;
+    margin: 0 auto;
+    -webkit-text-size-adjust: 100% !important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.module_header {
+    background: #eeeeee;
+    width: 100%;
+    display: none;
+    padding-top:10px;
+}
+
+.module_top {
+    height: 25px;
+    padding: 6px 0;
+    position: relative;
+    text-align: center;
+}
+
+.title_line {
+    position: absolute;
+    top: 15px;
+    background: #f4f4f4;
+    border-top: 1px solid #dedede;
+    margin: 0 10px;
+    left: 0;
+    right: 0;
+}
+
+.module_title {
+    font-size: 16px;
+    z-index: 99;
+    position: absolute;
+    color: #555555;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+    .module_title span {
+        background: #eeeeee;
+        padding: 0 5px;
+    }
+
+
+
+.module_title2 {
+    margin: 0 auto;
+    background: #eeeeee;
+    font-size: 16px;
+    z-index: 99;
+    color: #333333;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+
+
+.title_border {
+    border-bottom: 1px solid #dedede;
+}
+
+.module_body {
+    background: #eeeeee;
+    width: 100%;
+    display: none;
+    margin-bottom: 20px;
+    padding-top:20px;
+}
+
+.body_table {
+    /*padding: 0 10px;*/
+}
+
+.table_info {
+    width: 100%;
+}
+
+.border_title {
+    width: 100%;
+    background: #FFFFFF;
+    margin-bottom: 5px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.1);
+}
+
+.table_info .left {
+    width: 28%;
+    padding-left: 10px;
+}
+
+.table_info .right {
+    width: 72%;
+    padding-left: 5px;
+}
+
+
+.table_title {
+    padding: 5px 0;
+    border-bottom: 1px solid #dedede;
+}
+
+.leftTags {
+    float: left;
+    width: 25%;
+    padding-left: 10px;
+    color: #FFFFFF;
+}
+
+    .leftTags img {
+        width: 100%;
+    }
+
+.rightTitle {
+    float: left;
+    font-size: 12px;
+    color: #999999;
+    padding-left: 5px;
+    margin-top: 4px;
+}
+
+
+/* iphone5 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    .leftTags {
+        width: 25%;
+    }
+
+    .rightTitle {
+        margin-top: 3px;
+    }
+}
+
+/* iphone6 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+    .leftTags {
+        width: 25%;
+    }
+
+    .rightTitle {
+        font-size: 12px;
+        margin-top: 2px;
+    }
+}
+
+
+
+.flightNo {
+    font-size: 15px;
+    margin-top: 10px;
+    color: #333333;
+    width: 100%;
+    font-weight: 600;
+}
+
+
+.flightJoin {
+    width: 100%;
+}
+
+    .flightJoin .small {
+        color: #FF6C60;
+        font-size: 12px;
+    }
+
+    .flightJoin .Num {
+        color: #FF6C60;
+        font-size: 16px;
+    }
+
+    .flightJoin .Txt {
+        color: #999999;
+        font-size: 12px;
+    }
+
+
+.table_percent {
+    width: 100%;
+}
+
+    .table_percent .left {
+        width: 80%;
+        padding-left: 0px;
+    }
+
+    .table_percent .right {
+        width: 20%;
+        font-size: 14px;
+        color: #FF6C63;
+        text-align: center;
+    }
+
+
+.table_bottom {
+    width: 100%;
+    margin-top: 5px;
+}
+
+    .table_bottom .left {
+        width: 33%;
+        padding-left: 0px;
+    }
+
+
+/*进度条*/
+
+.strip {
+    border-radius: 3px;
+    background: #f4f4f4;
+    width: 100%;
+    height: 5px;
+    margin: 5px 0;
+    position: relative;
+}
+
+.strip_sucss {
+    border-radius: 3px;
+    background: #FF6C63;
+    width: 60%;
+    height: 5px;
+}
+
+
+
+/*icon*/
+.icon_person {
+    background: url("../images/square/icon_preson2.png") no-repeat;
+    background-size: 100% 100%;
+    width: 18px;
+    height: 18px;
+    float: left;
+}
+
+
+.icon_time {
+    background: url("../images/square/icon_time.png") no-repeat;
+    background-size: 100% 100%;
+    width: 18px;
+    height: 18px;
+    float: left;
+}
+
+.icon_money {
+    background: url("../images/square/icon_money.png") no-repeat;
+    background-size: 100% 100%;
+    width: 18px;
+    height: 18px;
+    margin-top: 1px;
+    float: left;
+}
+
+.icon_text {
+    float: left;
+    color: #999999;
+    font-size: 13px;
+    margin-left: 5px;
+    margin-top: 1px;
+}
+
+
+
+/* iphone5 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    .icon_person {
+        width: 16px;
+        height: 16px;
+        float: left;
+    }
+
+    .icon_time {
+        width: 16px;
+        height: 16px;
+        float: left;
+    }
+
+    .icon_money {
+        width: 16px;
+        height: 16px;
+        margin-top: 1px;
+        float: left;
+    }
+
+    .icon_text {
+        font-size: 13px;
+        margin-left: 5px;
+        margin-top: 1px;
+    }
+}
+
+/* iphone6 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+    .icon_person {
+        width: 18px;
+        height: 18px;
+        float: left;
+    }
+
+
+    .icon_time {
+        width: 18px;
+        height: 18px;
+        float: left;
+    }
+
+    .icon_money {
+        width: 18px;
+        height: 18px;
+        margin-top: 1px;
+        float: left;
+    }
+
+    .icon_text {
+        font-size: 13px;
+        margin-left: 5px;
+        margin-top: 1px;
+    }
+}
+
+
+
+/*改写插件的值*/
+.page_guide_slider {
+    padding: 0;
+}
+
+
+.page_guide_item {
+    margin: 0;
+    margin-left: 5px;
+}
+
+.page_guide_items {
+    height: 120px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+
+
+/*改写圆形百分比插件的值*/
+.circle-info, .circle-info-half {
+    color: #555555;
+}
+
+
+.circliful {
+    top: 5px;
+    left: -5px;
+}
+
+
+
+.circle-text {
+    line-height: 80px;
+    width: 100%;
+    top: -10px;
+}
+
+.circle-info {
+    margin-top: 0px;
+    font-size: 12px;
+}
+
+
+.slide_module {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    background: url("../images/square/bg_module.png") no-repeat;
+    background-size: 100% 100%;
+    border-radius: 4px;
+    width: 150px;
+    box-shadow: 1px 1px 10px #f4f4f4;
+}
+
+
+/* iphone5 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    .slide_module {
+        width: 125px;
+    }
+}
+
+/* iphone6 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+    .slide_module {
+        width: 150px;
+    }
+}
+
+
+
+.module_td1 {
+    font-size: 12px;
+    width: 100%;
+    color: #FFFFFF;
+    padding-top:5px;
+}
+
+.module_td2 {
+    font-size: 28px;
+    line-height: 28px;
+    width: 100%;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-weight:bold;
+}
+
+.module_td3 {
+    font-size: 13px;
+    line-height: 14px;
+    width: 100%;
+    color: #FFFFFF;
+    text-align: right;
+}
+
+.module_td4 {
+    font-size: 13px;
+    width: 100%;
+    color: #FFFFFF;
+    margin-top: 2px;
+    text-align: right;
+    line-height: 16px;
+}
+
+.module_td5 {
+    font-size: 16px;
+    line-height: 16px;
+    width: 100%;
+    color: #FFFFFF;
+    margin-top: 5px;
+    text-align: right;
+    font-weight:600;
+}
+
+
+.noinfo {
+    width: 100%;
+    background: #f4f4f4;
+    text-align: center;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+    .noinfo img {
+        margin: 0 auto;
+        margin-top: 80px;
+        width: 50%;
+    }

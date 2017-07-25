@@ -1,0 +1,207 @@
+﻿
+body {
+    background-color: #f4f4f4;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    max-width:440px;
+    position:relative;
+    margin:0 auto;
+}
+
+
+.ins-order-box {
+    padding-bottom: 50px;
+}
+
+.table_div {
+    width: 100%;
+    margin-top: 10px;
+    background-color: white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.table_row {
+    width: 100%;
+    padding-bottom: 2px;
+}
+
+.table_row_foot {
+    text-align: right;
+    padding-right: 15px;
+    border-top: 1px solid #cccccc;
+    height: 40px;
+}
+
+
+
+.table_td_info {
+    height: 20px;
+    font-size: 0.8rem;
+    color: #888888;
+    padding: 0 15px;
+    padding-top: 5px;
+}
+
+
+.ins_order_td1s {
+    border-bottom: 1px solid #ccc;
+    padding: 5px 15px;
+}
+
+    .ins_order_td1s > .head {
+        float: left;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+.tdstatus {
+    color: #1aa97b;
+    font-size: 1rem;
+    text-align: right;
+    float: right;
+    margin-top: 2px;
+}
+
+
+.ins_td_row {
+    height: 35px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+.ins_td_left {
+    width: 60%;
+    height: 30px;
+    padding-left: 15px;
+}
+
+    .ins_td_left img {
+        margin-right: 5px;
+    }
+
+.ins_td_right {
+    width: 40%;
+    height: 30px;
+    padding-right: 15px;
+}
+
+
+    .ins_td_right img {
+        margin-right: 5px;
+    }
+
+.ins_order_td4s {
+    height: 20px;
+    padding-left: 15px;
+    font-size: 12px;
+    color: #888888;
+}
+
+.ins_order_td5s {
+    border-top: 1px solid #ccc;
+    text-align: right;
+    padding-right: 15px;
+    height: 40px;
+}
+
+
+.ins-table {
+    width: 100%;
+    margin-top: 10px;
+    background-color: white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #333333;
+    padding: 10px;
+}
+
+.ins-table-title {
+    width: 100%;
+}
+
+
+.ins-title-left {
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.ins-title-right {
+    float: right;
+    font-size: 14px;
+    color: #555555;
+    margin-top:2px;
+}
+
+.flightimg {
+    width: 25px;
+    margin-right: 8px;
+}
+
+.flightimg2 {
+    width: 25px;
+    margin-right: 8px;
+}
+
+.ins-table-row {
+    width: 100%;
+    font-size: 14px;
+}
+
+.ins-table-warn {
+    width: 100%;
+    font-size: 12px;
+    color: #888888;
+    margin-top: 8px;
+}
+
+
+.point {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #1aa97b;
+    border: 1px solid #1aa97b;
+    vertical-align:middle;
+    float:left;
+   margin-right: 8px;
+    margin-top: 6px;
+}
+
+
+.point2 {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #FF6C60;
+    border: 1px solid #FF6C60;
+     vertical-align:middle;
+      float:left;
+    margin-right: 8px;
+    margin-top: 6px;
+}
+
+
+.point3 {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #888888;
+    border: 1px solid #888888;
+     vertical-align:middle;
+      float:left;
+    margin-right: 8px;
+    margin-top: 6px;
+}

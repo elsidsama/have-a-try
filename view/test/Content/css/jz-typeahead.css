@@ -1,0 +1,46 @@
+﻿
+
+
+
+.ul_info {
+    display: none;
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: 99999;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    height: 25vh;
+    overflow: scroll;
+    width: 100%;
+}
+
+    .ul_info li {
+        color: #333333;
+        list-style-type: none;
+        text-decoration: none;
+        text-align: center;
+        border-bottom: 1px solid #f4f4f4;
+    }
+
+
+        .ul_info li a {
+            display: block;
+            padding: 3px 20px;
+            clear: both;
+            font-weight: normal;
+            line-height: 1.42857143;
+            color: #333;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+
+            .ul_info li a:focus, .ul_info li a:active, .ul_info li a:focus, .ul_info li a:visited {
+                display: block;
+                padding: 3px 20px;
+                clear: both;
+                font-weight: normal;
+                line-height: 1.42857143;
+                color: #333;
+                text-decoration: none;
+                white-space: nowrap;
+            }

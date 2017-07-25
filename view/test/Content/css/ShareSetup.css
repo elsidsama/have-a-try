@@ -1,0 +1,545 @@
+﻿
+
+
+
+body {
+    background: #f4f4f4;
+    font-family: "Helvetica Neue",Helvetica,"Lucida Grande",Arial,"Hiragino Sans GB","微软雅黑","WenQuanYi Micro Hei",STHeiti,SimSun,sans-serif;
+        -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    max-width:440px;
+    position:relative;
+    margin:0 auto;
+}
+
+
+.contain {
+    padding: 0 15px;
+    padding-top: 1.4rem;
+    padding-bottom: 1rem;
+    background-color: #FFFFFF;
+}
+
+
+.contain_title {
+    width: 100%;
+    line-height: 1.6;
+}
+
+    .contain_title span {
+        color: #333333;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+.contain_title2 {
+    width: 100%;
+    line-height: 11px;
+}
+
+    .contain_title2 span {
+        color: #888888;
+        font-size: 1rem;
+    }
+
+.contain_flag {
+    width: 100%;
+    margin-top: 15px;
+}
+
+    .contain_flag div {
+        width: 15%;
+        background-color: #ffc400;
+        height: 0.5rem;
+    }
+
+
+.contain_cut {
+    width: 100%;
+    height: 0.8rem;
+    background-color: #f4f4f4;
+}
+
+
+.contain_body {
+    padding: 10px 15px;
+    background-color: #FFFFFF;
+}
+
+.body_title {
+    width: 100%;
+    color: #333333;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: bolder;
+}
+
+    .body_title table {
+        width: 100%;
+    }
+
+
+.title_left {
+}
+
+.title_right {
+    text-align: right;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+    .title_right span {
+    }
+
+
+.contain_body3 {
+    padding: 10px 15px;
+    background-color: #FFFFFF;
+}
+
+
+.body3_content {
+    width: 100%;
+    height: 20px;
+    line-height: 1.2rem;
+}
+
+    .body3_content > .left {
+        float: left;
+        font-size: 1.2rem;
+        color: #333333;
+    }
+
+    .body3_content > .right {
+        float: right;
+        font-size: 1.2rem;
+        color: #333333;
+    }
+
+.contain_body4 {
+    padding: 10px 15px;
+    background-color: #FFFFFF;
+}
+
+
+.body4_head {
+    width: 100%;
+    line-height: 1.2rem;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #dedede;
+}
+
+
+    .body4_head > .left {
+        float: left;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        color: #333333;
+        font-weight: bold;
+    }
+
+    .body4_head > .right {
+        float: right;
+        font-size: 1rem;
+        color: #555555;
+    }
+
+.hide_info {
+    width: 100%;
+    font-size: 0.8rem;
+    color: #888888;
+    line-height: 1rem;
+    padding-top: 5px;
+}
+
+.body_info {
+    width: 100%;
+    padding-top: 10px;
+}
+
+    .body_info td {
+        padding: 0.5px 0;
+    }
+
+.body_info_left {
+    width: 90%;
+    font-size: 1rem;
+    color: #555555;
+}
+
+
+.body_info_right {
+    width: 10%;
+    text-align: right;
+}
+
+
+/*地步按钮*/
+.contain_foot {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 999;
+    text-align: center;
+    background-color: #1aa97b;
+    line-height: 3rem;
+    max-width:440px;
+    margin:0 auto;
+}
+
+
+
+    .contain_foot span {
+        font-size: 1.2rem;
+        line-height: 3rem;
+        color: #FFFFFF;
+    }
+
+
+.shareDiv {
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    display: none;
+}
+
+.share_img {
+    z-index: 99999;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+}
+
+    .share_img img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+.shareInfo {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    z-index: 99999;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.shareInfo2 {
+    margin: 0 auto;
+    width: 30%;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    color: #333333;
+    padding: 5px 0;
+}
+
+
+.shareInfo span {
+    font-size: 1rem;
+    color: #333333;
+}
+
+
+.share_bg {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+.body_psg {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #dedede;
+}
+
+    .body_psg table {
+        width: 100%;
+    }
+
+.body_flight {
+    width: 100%;
+    padding: 10px 0;
+}
+
+    .body_flight table {
+        width: 100%;
+    }
+
+
+.psg_left {
+    width: 10%;
+}
+
+    .psg_left img {
+        width: 30px;
+        height: 32px;
+        margin: 0 auto;
+    }
+
+.psg_right {
+    width: 90%;
+    padding: 0px;
+    padding-left: 15px;
+}
+
+
+
+.psg_head {
+    width: 100%;
+    font-size: 1rem;
+    color: #333333;
+    font-weight: bold;
+}
+
+.psg_foot {
+    font-size: 1rem;
+    color: #555555;
+}
+
+
+
+
+/*弹窗样式*/
+
+.weui_dialog_title {
+    color: #333333;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.weui_bg {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.weui_dialog_hd {
+    border-bottom: 1px solid #dedede;
+    padding: .5em 20px;
+}
+
+
+.weui_dialog_confirm .weui_dialog .weui_dialog_bd {
+    text-align: center;
+    color: #333333;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+}
+
+
+.weui_dialog_confirm .weui_dialog .weui_dialog_hd {
+    padding: 0.5rem;
+}
+
+.weui_dialog_ft a {
+    color: #FFFFFF;
+}
+
+
+.weui_dialog_ft {
+    margin-top: 10px;
+}
+
+    .weui_dialog_ft a {
+        color: #1aa97b;
+    }
+
+        .weui_dialog_ft a:active {
+            background-color: #FFFFFF;
+            color: #1aa97b;
+        }
+
+.weui_dialog {
+    overflow: visible;
+    top: 35%;
+    border-radius: 5px;
+}
+
+
+
+.weui_left {
+    width: 100%;
+    text-align: center;
+}
+
+.weui_right img {
+    width: 20px;
+}
+
+.weui_top_btn {
+    width: 100%;
+    height: 5px;
+    text-align: right;
+}
+
+    .weui_top_btn img {
+        width: 20px;
+        margin-right: -8px;
+        margin-top: -15px;
+    }
+
+/*显示按钮*/
+.lcs_switch {
+    height: 22px;
+}
+
+.lcs_cursor {
+    top: 5px;
+    width: 12px;
+    height: 12px;
+}
+
+.lcs_switch.lcs_on .lcs_label_on {
+    left: 5px;
+}
+
+.lcs_switch.lcs_off .lcs_label_off {
+    right: 5px;
+}
+
+.lcs_switch.lcs_on .lcs_cursor {
+    left: 40px;
+}
+
+.lcs_switch.lcs_off .lcs_cursor {
+    left: 5px;
+}
+
+.lcs_label {
+    top: 2px;
+}
+
+
+/*飞机部分*/
+
+p {
+    margin-bottom: 0px;
+}
+
+.ins-bar-box {
+    width: 85%;
+    float: left;
+    border-radius: 3px;
+    height: 5px;
+    background-color: #dedede;
+    position: relative;
+}
+.ins-bar-box2 {
+    width: 15%;
+    text-align: center;
+    color: #555555;
+    position: relative;
+    float: left;
+}
+
+.ins-bar-inner {
+    width: 0%;
+    height: 5px;
+    margin-right: 2px;
+    float: left;
+    background-color: #1aa97b;
+    z-index: 99;
+    border-radius: 8px;
+    position: relative;
+}
+
+.ins-bar-tip {
+    margin-top: -16px;
+    margin-right: -28px;
+}
+
+.area_flight2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+
+/*航班信息*/
+.flightBox {
+    padding: 5px 15px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.raisetitle {
+    text-align: left;
+    color: #333333;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.jz_table_detail {
+    width: 33%;
+    position: relative;
+    text-align: center;
+}
+
+.jz_table_detail2 {
+    width: 33%;
+    position: relative;
+    text-align: center;
+}
+
+.jz_right_line {
+}
+
+
+.jz_table_detail:after {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    content: "";
+    color: #555555;
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background: #999999;
+}
+
+
+.jz_table_txt {
+    color: #555555;
+    font-size: 15px;
+}
+
+
+.jz_table_raise {
+    color: #333333;
+    font-size: 16px;
+    font-weight:600;
+}
+
+.jz_table_raise2 {
+    color: #333333;
+    font-size: 14px;
+      font-weight:600;
+}
+
+.jz_dt {
+}
+
+@media only screen and (min-width:440px) and (min-height:736px){
+    .contain_foot {
+       position:absolute;
+    }
+}

@@ -1,0 +1,780 @@
+﻿
+
+.makeraise {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+a:active {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.ins-bar-box {
+    width: 100%;
+    height: 5px;
+    background-color: #dedede;
+    position: relative;
+}
+
+.ins-bar-inner {
+    width: 0%;
+    height: 5px;
+    margin-right: 2px;
+    float: left;
+    background-color: #1aa97b;
+    z-index: 99;
+    position: relative;
+}
+
+.ins-bar-tip {
+    float: right;
+    margin-top: -8px;
+    margin-right: -10px;
+}
+
+.ins-bar-it1 {
+    float: left;
+    margin-top: 5px;
+    border-top: 20px solid #1aa97b;
+    border-right: 10px solid transparent;
+}
+
+.ins-bar-it2 {
+    width: 40px;
+    position: absolute;
+    left: 0;
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+}
+
+.ins-bar-time {
+    width: 180px;
+    float: right;
+    text-align: right;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.ins-fdi-box {
+    padding: 15px;
+    background-color: white;
+}
+
+.ins-fdi-head {
+    font-size: 14px;
+}
+
+    .ins-fdi-head td {
+        color: #555555;
+    }
+
+.ins-fdi-td1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+.table_head {
+    background-color: #FFFFFF;
+    margin: 0;
+    border-top: 1px solid #dedede;
+    padding: 10px 20px;
+}
+
+    .table_head table {
+        width: 100%;
+    }
+
+.fd_tr5_f1 {
+    width: 20%;
+}
+
+    .fd_tr5_f1 img {
+        border: solid 2px #eeeeee;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        margin-top: 3px;
+    }
+
+
+
+.fd_tr5_f2 {
+    margin-left: 15px;
+}
+
+.fd_tr5_f2_text1 {
+    font-size: 12px;
+    color: #666666;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.fd_tr5_f2_text2 {
+    font-size: 14px;
+    color: #000000;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.area_bg {
+    margin: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #eeeeee;
+}
+
+/*航班状态、航班号*/
+.area_title {
+    margin-top: 10px;
+    padding: 5px 20px;
+}
+
+.area_title1 {
+    border: 1px solid #ff883f;
+    border-radius: 5px;
+    padding: 2px 2px;
+    font-size: 12px;
+    color: #ff883f;
+    float: left;
+    line-height: 20px;
+}
+
+
+.area_title2 {
+    margin-left: 15px;
+    color: #555555;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    line-height: 25px;
+}
+
+
+.area_title3 {
+    color: #555555;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    line-height: 25px;
+}
+
+/*出发地、准点率*/
+.area_info {
+    padding: 0px 20px;
+}
+
+.area_info1 {
+    float: left;
+    width: 15px;
+    text-align: center;
+    text-align: center;
+}
+
+    .area_info1 img {
+        margin: 0 auto;
+    }
+
+.area_info2 {
+    float: left;
+    padding-left: 5px;
+}
+
+.area_info3 {
+    float: left;
+    text-align: center;
+    margin-left: 10px;
+    width: 15px;
+    text-align: center;
+}
+
+    .area_info3 img {
+        margin: 0 auto;
+    }
+
+.area_info4 {
+    float: left;
+    padding-left: 15px;
+    padding-left: 5px;
+}
+
+.area_info5 {
+    line-height: 18px;
+    color: #555555;
+    font-size: 14px;
+}
+
+.area_info6 {
+    line-height: 18px;
+    font-size: 12px;
+    color: #666666;
+}
+
+/*保单信息*/
+
+.area_flight {
+    padding: 10px 20px;
+}
+
+.area_flight1 {
+    text-align: center;
+    vertical-align: central;
+}
+
+.area_flight1_l {
+    float: left;
+}
+
+
+.area_flight1_t1 {
+    font-size: 22px;
+    color: #1aa97b;
+    padding-left: 5px;
+}
+
+.area_flight1_t2 {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #999999;
+}
+
+.area_flight2 {
+   margin-top:25px;
+   margin-bottom:15px;
+}
+
+
+.area_flight3 {
+    margin-top: 10px;
+}
+
+.area_flight3_l {
+    float: left;
+}
+
+.area_flight3_r {
+    float: right;
+    font-size: 12px;
+    color: #999999;
+}
+
+.area_rule {
+    width: 100%;
+    padding: 20px;
+}
+
+.area_rule_title {
+    font-size: 18px;
+    color: #666666;
+    line-height: 25px;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 5px;
+}
+
+
+.rule_title {
+    font-size: 16px;
+    color: #666666;
+    line-height: 16px;
+}
+
+
+.rule_content {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #666666;
+}
+
+
+.ins-fdi-td3 {
+    padding-bottom: 5px;
+}
+
+    .ins-fdi-td3 img {
+        float: left;
+    }
+
+.ins-fdi-m1 {
+    width: 150px;
+    float: left;
+    font-size: 22px;
+    color: #1aa97b;
+    padding-left: 5px;
+}
+
+    .ins-fdi-m1 span {
+        font-size: 12px;
+        margin-left: 5px;
+        color: #999999;
+    }
+
+.ins-fdi-m2 {
+    width: 130px;
+    float: right;
+    text-align: right;
+    font-size: 12px;
+    color: #999999;
+    margin-top: 10px;
+}
+
+.ins-fdi-td4 {
+    padding-bottom: 15px;
+}
+
+.ins-fdi-td5 {
+    font-size: 14px;
+}
+
+.ins-fdi-rule {
+    margin-top: 10px;
+}
+
+.ins-fdi-rtd1 {
+    border-bottom: solid 1px #dedede;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.sp_btns {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #dedede;
+}
+
+.sp_btnleft {
+    float: left;
+    width: 49%;
+    padding: 5px 0;
+    background-color: #FFFFFF;
+    text-align: center;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    color: #333333;
+}
+
+.sp_btnright {
+    float: right;
+    width: 49%;
+    padding: 5px 0;
+    color: #FFFFFF;
+    background-color: #1aa97b;
+    text-align: center;
+    border: 1px solid #1aa97b;
+    border-radius: 5px;
+}
+
+.sp_btnw {
+    width: 100%;
+    padding: 5px 0;
+    color: #FFFFFF;
+    background-color: #1aa97b;
+    text-align: center;
+    border: 1px solid #1aa97b;
+}
+
+
+
+/*航班延误订单页*/
+.ins-order-box {
+    padding: 10px 20px;
+}
+
+.ins-order-create {
+    font-size: 14px;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: dashed 1px #999999;
+}
+
+.ins-order-div {
+    width: 100%;
+    margin-top: 10px;
+    background-color: white;
+    border-left: solid 5px #1aa97b;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px 10px 20px 10px;
+}
+
+.ins-order-td1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ins-order-td2 {
+    font-size: 12px;
+    text-align: right;
+}
+
+.ins-border-b1 {
+    border-bottom: solid 1px #dedede;
+}
+
+.ins-border-r1 {
+    border-right: solid 1px #dedede;
+}
+
+.ins-order-td3 {
+    text-align: center;
+}
+
+.ins-order-td4 {
+    font-size: 12px;
+}
+
+.ins-order-td3 span.t1 {
+    color: #1aa97b;
+    font-size: 14px;
+}
+
+.ins-order-td3 span.t2 {
+    font-size: 12px;
+}
+
+.ins-order-d1 {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+    border: solid 1px #ff833f;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+}
+
+.ins-order-finish {
+    float: left;
+    height: 100%;
+    width: 50%;
+    background-color: #ffa777;
+}
+
+.ins-order-finishtip {
+    float: left;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.ins-order-d2 {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+    border: solid 1px #ff833f;
+    background-color: #ff833f;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    color: white;
+}
+
+.ins-order-menu {
+    padding-top: 5px;
+    width: 100%;
+    display: table;
+    text-align: center;
+    font-size: 16px;
+    line-height: 35px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.ins-order-my {
+    width: 50%;
+    float: left;
+    border-bottom: solid 1px #dedede;
+}
+
+.ins-order-take {
+    width: 50%;
+    float: left;
+    border-bottom: solid 1px #dedede;
+}
+
+.ins-om-active {
+    color: #1aa97b;
+    border-bottom: solid 1px #1aa97b;
+}
+
+.ins-od-head {
+    background-color: #1aa97b;
+    width: 100%;
+    display: table;
+}
+
+    .ins-od-head div.ins-od-tip {
+        width: 100px;
+        float: left;
+        margin: 25px;
+        margin-top: 65px;
+        color: white;
+        font-size: 16px;
+    }
+
+    .ins-od-head img {
+        float: right;
+        margin: 25px;
+    }
+
+.ins-od-detail {
+    padding: 10px 15px 5px 15px;
+}
+
+.ins-od-order {
+    background-color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.ins-od-btn {
+    border: solid 1px #dedede;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    padding: 3px 5px 2px 5px;
+    font-size: 8px;
+}
+
+.ins-od-td1 {
+    font-size: 16px;
+}
+
+
+
+/*众筹人员*/
+
+
+.raiseFri {
+    padding: 10px 20px;
+}
+
+.raisetitle {
+    text-align: left;
+    color: #555555;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.raisetitle2 {
+    text-align: center;
+    color: #333333;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.raiseFri table {
+    width: 100%;
+}
+
+.ins-list-d tr {
+    width: 100%;
+}
+
+/*首页*/
+.ins-fi-head {
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.ins-fi-tab {
+}
+
+.ins-fi-td1 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.ins-fi-body {
+    padding: 10px 10px 50px 10px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.ins-ci-tip {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+
+.ins-ci-header {
+    border: 2px solid #1aa97b;
+}
+
+.ins-ci-body {
+    padding: 10px;
+}
+
+#txtShareNote {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.ins-ci-btn {
+    width: 48%;
+    height: 45px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+    background-color: white;
+    font-size: 18px;
+    color: #333333;
+}
+
+.active {
+    border: 1px solid #1aa97b;
+    color: #1aa97b;
+}
+
+.ins-ci-btn:hover {
+    border: 1px solid #1aa97b;
+    color: #1aa97b;
+}
+
+.ins-ci-none {
+    display: none;
+}
+
+.ins-ci-button {
+    width: 98%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #1aa97b;
+    color: white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+textarea {
+    outline: none;
+    resize: none;
+}
+
+.ins-order-show {
+    width: 160px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #999999;
+    background-color: white;
+    margin-top: 8px;
+}
+
+.ins-to-detail {
+    font-size: 12px;
+    width: 100%;
+    border-top: dashed 1px #dedede;
+    margin-top: 8px;
+    display: none;
+}
+
+/**/
+
+.jz_dialog_div {
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.jz_dialog_bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    filter: alpha(opacity=70);
+}
+
+.jz_dialog_img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 999;
+    margin-top: 35%;
+}
+
+    .jz_dialog_img img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+.jz_dialog_body {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    z-index: 5000;
+}
+
+.jz_body_div {
+    width: 100%;
+    float: right;
+}
+
+.jz_body_text {
+    float: right;
+    width: 50%;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.jz_btn_div {
+    width: 100%;
+    z-index: 5000;
+    text-align: left;
+    margin-top: 25px;
+}
+
+.jz_btn_div2 {
+    width: 45%;
+    float: right;
+}
+
+.jz_dialog_btn {
+    text-align: center;
+    border: 1px solid #1aa97b;
+    border-radius: 5px;
+    color: #1aa97b;
+    font-size: 14px;
+    padding: 2px;
+    width: 80px;
+}
+
+

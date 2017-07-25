@@ -1,0 +1,666 @@
+<html class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths ui-mobile"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <meta content="telephone=no" name="format-detection">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>众众保 • 航班延误险</title>
+    <meta name="keywords" content="微信二次分享">
+    <meta name="description" content="获取微信二次分享描述">
+    <link href="./Content/bootstrap.css" rel="stylesheet">
+    <link href="./Content/site.css" rel="stylesheet">
+
+    <script src="./Scripts/modernizr-2.6.2.js"></script>
+
+    <script src="./Scripts/jquery-1.10.2.js"></script>
+
+    <script src="./Scripts/bootstrap.js"></script>
+    <script src="./Scripts/respond.js"></script>
+
+    <script src="./Scripts/json2.js"></script>
+
+
+
+    <style type="text/css">
+        html {
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body class="ui-mobile-viewport ui-overlay-a"><div data-role="page" data-url="/FlightIns/Index" tabindex="0" class="ui-page ui-page-theme-a ui-page-active" style="min-height: 949px;">
+
+
+
+
+    <script src="./Scripts/WxJs/WxJs.js"></script>
+    <link rel="stylesheet/less" type="text/css" href="./Content/css/jz-less.less">
+
+
+    <style type="text/css">
+        html {
+            height:100%;
+        }
+        body {
+            overflow: hidden;
+            width:100%;
+            height:100%;
+            max-width: 414px;
+            max-height: 736px;
+            -webkit-text-size-adjust: 100% !important;
+        }
+        .main_img{
+            background:url("/Content/images/delay/525.jpg") no-repeat left top;
+            background-size:cover;
+        }
+        .none {
+            display:none!important;
+        }
+        .ui-page {
+            min-height:0!important;
+            height:100%;
+            background-color:#ec2039;
+        }
+        .sysbody {
+            width: 100%;
+            position: relative;
+        }
+
+        @media screen and (min-device-width: 736px) {
+            .sysbody {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+
+        .contain {
+            width: 100%;
+            height: 100%;
+            /*background: url("/Content/images/delay/index.png") no-repeat;
+            background-size: 100% 100%;
+            position: absolute;*/
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .contain img {
+            width: 100%;
+            height:100%;
+        }
+
+
+        .bg_img {
+            margin: 0;
+        }
+
+        .bg_img img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .img_issue {
+            position: absolute;
+            top: 1em;
+            right: 15px;
+            z-index: 999;
+        }
+
+        .img_issue img {
+            width: 2.2rem;
+        }
+
+        .contain2 {
+            margin: 0;
+            padding: 0px 25px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            right: 0;
+        }
+
+        .div_img {
+            margin-top: 2em;
+            text-align: center;
+            z-index: 999;
+            width: 100%;
+        }
+
+        .div_img img {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .div_img2 {
+            margin-top: 1em;
+            text-align: center;
+            z-index: 999;
+            width: 100%;
+        }
+
+        .div_img2 img {
+            margin: 0 auto;
+            width: 85%;
+        }
+
+        .div_img3 {
+            margin-top: 1rem;
+            text-align: center;
+            z-index: 999;
+            width: 100%;
+        }
+
+        .div_img3 img {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .div_img4 {
+            margin-top: 0.5em;
+            text-align: center;
+            z-index: 999;
+            width: 100%;
+        }
+
+        .div_img4 img {
+            margin: 0 auto;
+            width: 50%;
+        }
+
+
+        .div_ft {
+            position: fixed;
+            bottom: 0;
+            z-index: 999;
+            width: 100%;
+            left: 0;
+            display: table-cell;
+            text-align: center;
+        }
+
+        .btn_next {
+            background-color: #ffc400;
+            width: 84%;
+            line-height: 3.2rem;
+            border:1px solid #ffc400;
+            border-radius:8px;
+            position:relative;
+            left:8%;
+        }
+
+        .btn_next span {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+
+        .left_img {
+            position: absolute;
+            top: 30%;
+            left: 15px;
+            z-index: 900;
+        }
+
+        .left_img img {
+            width: 40%;
+        }
+
+        .right_img {
+            position: absolute;
+            top: 30%;
+            right: 0;
+            z-index: 900;
+            text-align: right;
+        }
+
+        .right_img img {
+            width: 40%;
+        }
+
+        /*滑动图层*/
+
+        .slipDiv {
+            position: absolute;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: none;
+        }
+
+
+        .slip_bg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            filter: alpha(opacity=90%);
+            opacity: 0.7;
+            background: #333333;
+            z-index: 999;
+        }
+
+        .slipImg {
+            position: relative;
+            z-index: 999;
+            margin: 15% 20px 15% 20px;
+            overflow: hidden;
+        }
+
+
+        .btnRaiseDiv {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .btnRaise {
+            margin: 0 auto;
+            width: 50%;
+            border: 1px solid #ff6c63;
+            border-radius: 20px;
+            line-height: 2rem;
+            color: #ff6c63;
+            font-size: 1rem;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+
+        .slip_dele {
+            position: absolute;
+            top: 10px;
+            right: 30px;
+            width: 20px;
+            z-index: 999999;
+            height: 20px;
+            /*background: url('/Content/images/delay/direction4_1.png') no-repeat center;*/
+        }
+
+        .slip_dele img {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+
+        .maindiv {
+            width: 100%;
+            height:100%;
+        }
+
+        /*Bootrap*/
+        .carousel {
+            z-index: 99999;
+        }
+
+        .carousel-control.right {
+            display: none;
+        }
+
+        .carousel-control.left {
+            display: none;
+        }
+
+        .carousel-indicators li {
+            border: 1px solid #ff6c63;
+        }
+
+        .carousel-indicators .active {
+            background: #ff6c63;
+        }
+
+        .carousel {
+            background: #FFFFFF;
+            border: 1px solid #FFFFFF;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+
+        .flickerplate .arrow-navigation.left {
+            display: none;
+        }
+
+        .flickerplate .arrow-navigation.right {
+            display: none;
+        }
+
+        .ui-loader {
+            display: none;
+        }
+
+        .carousel-indicators li {
+            width: 8px;
+            height: 8px;
+        }
+
+        .carousel-indicators .active {
+            width: 10px;
+            height: 10px;
+        }
+
+        .carousel-indicators {
+            bottom: 0;
+        }
+
+        .div_ft {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        @media only screen and (min-width:415px){
+            body {
+                position:absolute;
+                left:50%;
+                margin-left:-207px;
+            }
+            .div_ft {
+                width:414px;
+                left:50%;
+                margin-left:-207px;
+            }
+        }
+        @media only screen and (min-width:415px) and (max-height:615px){
+            body {
+                overflow:auto;
+            }
+        }
+        @media only screen and (min-height:736px){
+            .div_ft {
+                position:absolute!important;
+            }
+        }
+    </style>
+
+
+    <style type="text/css">
+        .contain214 {
+            width: 100%;
+            height: 100%;
+            background: url("./Content/images/delay/0401.jpg") no-repeat;
+            background-size: contain;
+            position: absolute;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .img_issue214 {
+            position: absolute;
+            top: 2rem;
+            text-align: right;
+            right: 15px;
+            z-index: 999;
+            width: 15%;
+        }
+
+        .img_issue214 img {
+            width: 50%;
+        }
+
+        .img_text214 {
+            position: absolute;
+            top: 2.5em;
+            right: 25px;
+            text-align: right;
+        }
+
+        .img_text214 img {
+            width: 52%;
+        }
+
+        .btnNext {
+            margin: 0 auto;
+            width: 100%;
+            border: 1px solid #1aa97b;
+            color: #FFFFFF;
+            font-size: 1.4rem;
+            font-weight: 500;
+            padding: 5px 0;
+            background: #1aa97b;
+            z-index: 999;
+            text-align: center;
+        }
+
+
+
+    </style>
+
+    <script type="text/javascript">
+        define = null;
+        require = null;
+    </script>
+
+    <script type="text/javascript">
+
+        var mycarousel;
+        var bool = true;
+        $(document).ready(function (){
+
+            $(".div_ft").css("position", "absolute");
+            $(".div_ft").css("display", "block");
+            //$(".div_ft").css("bottom", "35px");
+
+            pushHistory();
+            setInterval(function () {
+                bool = true;
+            }, 1000);
+            window.onpopstate = function (e) {
+                if (bool) {
+                    if (getQueryString("back") != null) {
+                        bool = false;
+                        history.back();
+                    } else {
+                        WeixinJSBridge.call('closeWindow');
+                    }
+                }
+            }
+            $("body").on('touchmove', function (event) {
+                if (!$("body").hasClass("change")) {
+                    event.preventDefault();
+                }
+            });
+            shareToArea();
+
+            mycarousel = $('#mycarousel').carousel({
+                pause: true,
+                interval: false,
+                wrap: false
+            });
+
+            $(".carousel-inner").on("swipeleft", function () {
+
+                var imgurl = $('.carousel-inner > .active > img').attr('src');
+
+                if (imgurl == "./Content/images/delay/direction2.png") {
+
+                    mycarousel.carousel('next');
+                    $('.carousel-indicators').css('display', 'none');
+                }
+                else if (imgurl == "./Content/images/delay/direction3.png") {
+
+                    $('.carousel-indicators').css('display', 'none');
+                }
+                else {
+                    mycarousel.carousel('next')
+                    $('.carousel-indicators').css('display', 'block');
+                }
+            }).on("swiperight", function () {
+
+                mycarousel.carousel('prev');
+                $('.carousel-indicators').css('display', 'block');
+            })
+
+
+        })
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        }
+
+        function shareToArea() {
+
+            var url = window.location.href.split('#')[0];
+            url = encodeURIComponent(url);
+            var linkUrl = 'http://www.17zhongzhong.com/FlightIns/Index';
+            var imgUrl = 'http://www.17zhongzhong.com/Content/images/delay/share_index.png';
+
+            $.ajax({
+                url: "/api/WxJsApi/GetWx_Config?url=" + url,
+                type: "GET",
+                success: function (res) {
+                    var data = $.parseJSON(res);
+
+                    wx.config({
+                        debug: false,
+                        appId: data.appId,
+                        timestamp: data.timestamp,
+                        nonceStr: data.nonceStr,
+                        signature: data.signature,
+                        jsApiList: data.jsApiList
+                    })
+
+                    wx.ready(function () {
+
+                        wx.onMenuShareAppMessage({
+                            title: '众众保 • 航班延误险',
+                            desc: '不需要自己购买的航班延误险',
+                            link: linkUrl,
+                            imgUrl: imgUrl,
+                            type: 'link'
+                        });
+
+                        wx.onMenuShareTimeline({
+                            title: '众众保 • 航班延误险',
+                            link: linkUrl,
+                            imgUrl: imgUrl
+
+                        });
+
+                        wx.showAllNonBaseMenuItem();
+
+                    });
+                }
+            });
+        }
+
+        function makeraise() {
+
+            window.location.href = "/FlightIns/MakeRaise";
+        }
+
+        function msgShow() {
+            mycarousel.carousel(0);
+            $('.carousel-indicators').css('display', 'block');
+            $(".slipDiv").css("display", "block");
+            $("body").addClass("change");
+        }
+
+        function closeMsg() {
+            $(".slipDiv").css("display", "none");
+            $("body").removeClass("change");
+        }
+
+        function pushHistory() {
+            var state = {
+                title: "众众保 • 航班延误险",
+                url: ""
+            };
+            window.history.pushState(state, "众众保 • 航班延误险", "");
+        }
+
+    </script>
+
+    <div style="display:none;">
+        <img src="./Content/images/delay/share_index.png">
+    </div>
+
+
+
+    <div class="maindiv">
+        <div class="contain">
+
+            <img src="./Content/images/FlightIns/home.jpg" width="100%">
+        </div>
+
+        <div class="img_issue">
+            <img src="./Content/images/delay/index_3.png" onclick="msgShow()">
+        </div>
+        <div class="div_ft" style="bottom: 16px; position: absolute; display: block;">
+            <div class="btn_next" onclick="_czc.push(['_trackEvent', '航班延误险', '发起众筹', '按钮', '1', '点击']);makeraise()">
+                <span>开始投保</span>
+            </div>
+            <div style="color:white;font-size:12px;margin-top:14px;">邀请好友，投入越多，赚得越多</div>
+        </div>
+
+        <div class="none">
+            <div class="contain214"></div>
+
+
+            <div style="position:absolute; width:100%;z-index:999; text-align:center;bottom:0;">
+                <div style="width:80%;background:#FFC928;border:1px solid #B22F3B;color:#FFFFFF;font-size:16px;padding:8px 0; margin:0 auto;border-radius: 5px; margin-bottom: 5px;  " onclick="_czc.push(['_trackEvent', '航班延误险', '发起众筹', '按钮', '1', '点击']);makeraise()">开始投保</div>
+                <div style="color:#555555; margin:0 auto; margin-top: 8px;margin-bottom: 5px;" onclick="msgShow()">产品说明</div>
+            </div>
+        </div>
+
+
+        <div class="slipDiv">
+            <div class="slip_bg" onclick="closeMsg()"></div>
+            <div class="slipImg">
+                <div class="slip_dele" onclick="closeMsg()">
+                    <img src="./Content/images/delay/direction4_1.png">
+                </div>
+                <div id="mycarousel" class="carousel slide">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="./Content/images/delay/direction1.png">
+
+                        </div>
+                        <div class="item">
+                            <img src="./Content/images/delay/direction2.png">
+
+                        </div>
+                        <div class="item">
+                            <div class="btnRaiseDiv"><div class="btnRaise" onclick="_czc.push(['_trackEvent', '航班延误险', '首页', '发起众筹', '', 'Index']);makeraise()">开始投保</div></div>
+                            <img src="./Content/images/delay/direction3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Scripts/jquery.mobile-1.4.5.min.js"></script>
+
+
+
+    <div style="display:none;">
+        <script src="https://s11.cnzz.com/z_stat.php?id=1260898690&amp;web_id=1260898690" language="JavaScript"></script><script src="https://c.cnzz.com/core.php?web_id=1260898690&amp;t=z" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=1260898690" target="_blank" title="站长统计" class="ui-link">站长统计</a>
+    </div>
+
+    <!-- Visual Studio Browser Link -->
+    <script type="application/json" id="__browserLink_initializationData">
+        {"appName":"Chrome","requestId":"fac7f06ff4384601b610a5335244d61c"}
+    </script>
+    <script type="text/javascript" src="http://localhost:4400/5962140329a44c4eb99e85eb7bc49750/browserLink" async="async"></script>
+    <!-- End Browser Link -->
+
+
+
+</div><div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon-loading"></span><h1>loading</h1></div></body></html>

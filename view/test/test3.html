@@ -1,0 +1,183 @@
+
+
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta content="telephone=no" name="format-detection">
+    <title></title>
+
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="./css/PurchaseReport.css" rel="stylesheet" />
+    <script src="./js/jquery-1.8.3.min.js"></script>
+</head>
+<script>
+    var data = [{ "date": "2017-10-17",  "minute": 70 }, { "date": "2017-04-15",  "minute": 24 }, { "date": "2017-04-14",  "minute": 322 }, { "date": "2017-04-13",  "minute": 14 }, { "date": "2017-04-12",  "minute": 60 }, { "date": "2017-04-11",  "minute": 28 }];
+    var percents = 50;
+    $(document).ready(function () {
+        var widths = $(window).width();
+        if (widths > 750) {
+            widths = 750;
+        }
+        var canva_body = document.getElementById("table_canvas");
+        var cxt = canva_body.getContext("2d");
+        cxt.beginPath();
+        cxt.moveTo(3, 0);
+        cxt.lineTo(3, 324);
+        cxt.moveTo(103, 0);
+        cxt.lineTo(103, 324);
+        cxt.moveTo(203, 0);
+        cxt.lineTo(203, 324);
+        cxt.moveTo(303, 0);
+        cxt.lineTo(303, 324);
+        cxt.moveTo(403, 0);
+        cxt.lineTo(403, 324);
+        cxt.moveTo(503, 0);
+        cxt.lineTo(503, 324);
+        cxt.moveTo(603, 0);
+        cxt.lineTo(603, 324);
+        cxt.moveTo(3, 0);
+        cxt.lineTo(622, 0);
+        cxt.moveTo(3, 54);
+        cxt.lineTo(622, 54);
+        cxt.moveTo(3, 108);
+        cxt.lineTo(622, 108);
+        cxt.moveTo(3, 162);
+        cxt.lineTo(622, 162);
+        cxt.moveTo(3, 216);
+        cxt.lineTo(622, 216);
+        cxt.moveTo(3, 270);
+        cxt.lineTo(622, 270);
+        cxt.moveTo(3, 324);
+        cxt.lineTo(622, 324);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = "#e3e3e3";
+        cxt.stroke();
+        cxt.closePath();
+        $(".text_top").text(percents + "%");
+        data_load(data);
+    })
+    function data_load(data) {
+        var heights = 0;
+        if (data.length > 0) {
+            for (var a = 0, l = data.length; a < l; a++) {
+                (function (arg) {
+                    if (arg > 6) {
+                        return;
+                    }
+                    var flight_obj = data[arg], date_text = "";
+                    var dates = new Date(flight_obj.date);
+                    date_text += (dates.getMonth() + 1);
+                    date_text += ".";
+                    dates.getDate() > 9 ? date_text += dates.getDate() : date_text += "0" + dates.getDate();
+                    $($(".bottom_list li")[arg]).text(date_text);
+                    if (flight_obj.minute > heights) {
+                        heights = flight_obj.minute;
+                    }
+                })(a);
+            }
+            var widths = $(window).width();
+            if (widths > 750) {
+                widths = 750;
+            }
+            var canva_body = document.getElementById("table_canvas");
+            var cxt = canva_body.getContext("2d");
+            var standard = heights - heights % 6 + 6;
+            if (standard < 61) {
+                standard = 60;
+            }
+            for (var a = 0; a < data.length; a++) {
+                (function (arg) {
+                    var num = standard / 6 * (6-a);
+                    $($(".left_list li")[arg]).text(dealtime(num));
+                    var flight_obj = data[arg]
+                    data_num = flight_obj.minute;
+                    cxt.beginPath();
+                    var h = parseInt((1 - data_num / standard) * 324);
+                    var w = 3 + arg * 100;
+                    cxt.arc(w, h, 3, 0, 2 * Math.PI, false);
+                    //cxt.strokeStyle = "#1aa97b";
+                    //cxt.stroke();
+                    cxt.fillStyle = "#1aa97b";
+                    cxt.fill();
+                    cxt.closePath();
+                })(a);
+            }
+            cxt.beginPath();
+            cxt.moveTo(3, parseInt((1 - data[0].minute / standard) * 324));
+            for (var a = 1; a < data.length; a++) {
+                (function (arg) {
+                    cxt.lineTo(3 + arg * 100, parseInt((1 - data[arg].minute / standard) * 324))
+                })(a);
+            }
+            cxt.lineWidth = 3;
+            cxt.strokeStyle = "#1aa97b";
+            cxt.stroke();
+            cxt.lineTo(3 + (data.length-1) * 100, 324)
+            cxt.lineTo(0, 324)
+            cxt.lineTo(3, parseInt((1 - data[0].minute / standard) * 324));
+            var grad = cxt.createLinearGradient(0, 0, 0, 324);
+            grad.addColorStop(0, 'rgba(26,169,123,0.85)');
+            grad.addColorStop(1, 'rgba(255,255,255,0)');
+            cxt.fillStyle = grad;
+            cxt.fill();
+            cxt.closePath();
+            var widths = $(window).width();
+            if (widths > 750) {
+                widths = 750;
+            }
+            var percents = widths / 750;
+            $(".table_canvas").css("transform", "scale(" + percents + ")");
+            $(".table_canvas").css("margin-left", "-" + parseInt((1 - percents) * 310) + "px");
+            $(".table_canvas").css("margin-top", "-" + parseInt((1 - percents) * 165) + "px");
+        }
+    }
+    function dealtime(num) {
+        if (num > 43200) {
+            return parseInt(num / 43200) + "M" + parseInt((num % 43200) / 1440) + "D";
+        } else if (num > 1440) {
+            return parseInt(num / 1440) + "D" + parseInt((num % 1440) / 60) + "h";
+        } else if (num > 60) {
+            return parseInt(num / 60) + "h" + num % 60 + "m";
+        } else if (num == 0) {
+            return 0;
+        } else {
+            return num + "m";
+        }
+
+    }
+</script>
+<body>
+<section>
+    <div class="round_mod">
+    </div>
+    <div class="table_mod">
+        <span class="table_title">折线一个</span>
+        <ul class="left_list">
+            <li>60m</li>
+            <li>50m</li>
+            <li>40m</li>
+            <li>30m</li>
+            <li>20m</li>
+            <li>10m</li>
+            <li>0</li>
+        </ul>
+        <div class="table_body">
+            <canvas class="table_canvas" width="620" height="330" id="table_canvas"></canvas>
+        </div>
+        <ul class="bottom_list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</section>
+<script src="./js/adjust.js" type="text/javascript"></script>
+</body>
+</html>

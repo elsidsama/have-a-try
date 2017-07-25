@@ -1,0 +1,240 @@
+﻿
+body {
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
+    font-family: "Helvetica Neue",Helvetica,"Lucida Grande",Arial,"Hiragino Sans GB","微软雅黑","WenQuanYi Micro Hei",STHeiti,SimSun,sans-serif;
+    margin: 0;
+}
+
+
+.contain3 {
+    background-color: #FFFFFF;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+}
+
+
+
+/*顶部搜索框*/
+input.inputCity::-webkit-input-placeholder{
+    color:#FFFFFF;
+    font-size:13px;
+}
+
+.searchDiv {
+    background-color: #1aa97b;
+    padding: 10px;
+}
+
+
+.sleft {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.sleft1 {
+    width: 10%;
+    float: left;
+}
+
+
+.scenter {
+    width: 80%;
+    height:25px;
+    float: left;
+    margin-bottom:2px;
+}
+
+
+.citys {
+    position: absolute;
+    z-index: 999;
+    width: 80%;
+}
+
+.sright {
+    width: 10%;
+    float: right;
+    text-align: right;
+}
+
+
+.inputCity {
+    width: 90%;
+    margin-bottom: 0px;
+    border: 1px solid #1aa97b;
+    color: #FFFFFF;
+    font-size: 10px;
+    background-color: #1aa97b;
+}
+
+    .inputCity:focus {
+        border: 1px solid #1aa97b;
+    }
+
+
+
+.topImg {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.topImg2 {
+    width: 50%;
+    display: none;
+    margin: 0 auto;
+}
+
+/*输入框的检索*/
+.typeahead {
+    padding-left: 0px;
+    width: 80%;
+    background-color: #FFFFFF;
+}
+
+    .typeahead li {
+        color: #333333;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+.dropdown-item {
+    text-decoration: none;
+    color: #333333;
+}
+
+
+
+/*城市列表*/
+
+.main {
+    margin-top: 5%;
+}
+
+.letter {
+    font-size: 20px;
+    padding-left: 5%;
+}
+
+
+.letter2 {
+    font-size: 20px;
+    padding-left: 10%;
+}
+
+
+
+.leftMain {
+    width: 100%;
+    float: left;
+}
+
+
+.ulCity {
+    overflow: hidden;
+    width: 90%;
+    padding-right: 10px;
+    padding: 0;
+}
+
+    .ulCity li {
+        list-style-type: none;
+        display: block;
+        width: 33.333%;
+        float: left;
+        line-height: 25px;
+        text-align: center;
+        padding: 5px 0px;
+    }
+
+        .ulCity li a {
+            width: 80%;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 4% 20%;
+            font-size: 14px;
+            margin: 0 auto;
+            color: #999999;
+            border: 1px solid #666666;
+        }
+
+            .ulCity li a:hover {
+                color: #FFFFFF;
+                border: 1px solid #1aa97b;
+                background-color: #1aa97b;
+            }
+
+
+.ulItem {
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+    .ulItem li {
+        width: 90%;
+        padding: 10px 0px;
+        margin-left: 10%;
+        float: left;
+        list-style-type: none;
+        display: block;
+        text-align: left;
+        border-bottom: 1px solid #999999;
+    }
+
+
+        .ulItem li a {
+            width: 100%;
+            float: left;
+            text-decoration: none;
+            color: #666666;
+            display: block;
+        }
+
+
+.rightMain {
+    width: 15%;
+    float: right;
+    position: absolute;
+    right: 0;
+}
+
+.ulDiv {
+    position: fixed;
+    overflow-y: scroll;
+}
+
+
+
+/*城市导航*/
+.ulCity2 {
+    padding-left: 0px;
+}
+
+    .ulCity2 li {
+        list-style-type: none;
+        display: block;
+        width: 35px;
+        height: 25px;
+        float: right;
+        text-align: center;
+        color: #1aa97b;
+        line-height: 25px;
+    }
+
+        .ulCity2 li a {
+            text-decoration: none;
+            color: #1aa97b;
+        }
+
+            .ulCity2 li a:visited {
+                color: #1aa97b;
+            }
+
+            .ulCity2 li a:active {
+                color: #1aa97b;
+            }

@@ -1,0 +1,123 @@
+﻿
+
+.jzui_dialog_div {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+}
+
+
+.jzui_mask {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+.jzui_dialog {
+    position: fixed;
+    z-index: 99999;
+    width: 85%;
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #FAFAFC;
+    text-align: center;
+    overflow: visible;
+    top: 35%;
+    border-radius: 5px;
+}
+
+
+.jzui_dialog_title {
+    position: relative;
+}
+
+
+
+.jzui_title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333333;
+    padding: 0.5rem;
+    line-height: 1.5rem;
+    position: relative;
+}
+
+.jzui_btn_close {
+    position: fixed;
+    text-align: right;
+    width: 20px;
+    height: 20px;
+    z-index: 999999;
+    top: 2px;
+    right: 5px;
+}
+
+    .jzui_btn_close img {
+        width: 100%;
+    }
+
+.jzui_dialog_body {
+    text-align: center;
+    color: #333333;
+    min-height: 40px;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    word-wrap: normal;
+    word-break: normal;
+}
+
+
+.jzui_dialog_ft {
+    position: relative;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #1aa97b;
+    display: flex;
+}
+
+    .jzui_dialog_ft > a {
+        width: 100%;
+        text-align: center;
+        color: #1aa97b;
+        padding: 4px 0;
+        text-decoration: none;
+    }
+
+.btn_w {
+    border-top: 1px solid #dedede;
+        line-height: 2.5rem;
+}
+
+
+.jzui_dialog_ft > a:focus, .jzui_dialog_ft > a:visited, .jzui_dialog_ft > a:hover {
+    text-decoration: none;
+}
+
+.jzui_dialog_ft > .left {
+    float: left;
+    width: 50%;
+    color: #333333;
+    text-align: center;
+    font-size: 1.2rem;
+    border-top: 1px solid #dedede;
+    line-height: 2.5rem;
+}
+
+.jzui_dialog_ft > .right {
+    float: left;
+    width: 50%;
+    color: #FFFFFF;
+    background: #1aa97b;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+}

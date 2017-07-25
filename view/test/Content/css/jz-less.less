@@ -1,0 +1,49 @@
+﻿
+
+
+
+/* 如需判断横屏竖屏，请使用orientation元素：portrait、landscape*/
+
+@scale:1;
+.btjs_html(@scale) {
+    html {
+        font-size: @scale*10px;
+    }
+}
+
+
+
+/* iphone4、4s、5 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .btjs_html(1);
+}
+
+
+/* iPhone6 */
+@media screen and (min-device-width: 375px) and (max-device-width: 667px) {
+
+  
+}
+
+
+/* iPhone6 Plus */
+@media screen and (min-device-width: 414px) and (max-device-width: 736px) {
+     .btjs_html(1.5);
+}
+
+/* 魅族 */
+@media only screen and (min-device-width :1080px) and (-webkit-min-device-pixel-ratio : 2.5) {
+}
+
+/* mate7 */
+@media only screen and (min-device-width :1080px) and (-webkit-min-device-pixel-ratio : 3) {
+}
+
+
+/* ipad竖屏 */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+}
+
+/* ipad横屏 */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+}

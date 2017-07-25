@@ -1,0 +1,79 @@
+﻿
+
+/* 如需判断横屏竖屏，请使用orientation元素：portrait、landscape*/
+
+@scale: 1;
+.less_html(1);
+.less_html(@scale) {
+    html {
+        font-size: @scale*10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* iphone4、4s、5 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-min-device-pixel-ratio : 2) {
+    .less_html(1);
+
+}
+
+
+/* iPhone6 */
+@media screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio : 2){
+    .less_html(1);
+
+}
+
+
+/* iPhone6 Plus */
+@media screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio : 3){
+    .less_html(1.5);
+
+}
+
+/* 魅族 */
+@media only screen and (min-device-width :1080px) and (-webkit-min-device-pixel-ratio : 2.5) {
+}
+
+/* mate7 */
+@media only screen and (min-device-width :1080px) and (-webkit-min-device-pixel-ratio : 3) {
+}
+
+
+/* ipad竖屏 */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+}
+
+/* ipad横屏 */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+
+}
+
+
+/*底部按钮*/
+.div_ft {
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+    width: 100%;
+    left: 0;
+    display: table-cell;
+    text-align: center;
+}
+    .btn_next {
+        background-color: #1aa97b;
+        width: 100%;
+        line-height: 3rem;
+    }
+    .btn_next span {
+        color: #fff;
+        font-size: 1.5rem;
+    }

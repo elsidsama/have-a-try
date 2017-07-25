@@ -1,0 +1,89 @@
+html{}
+body,ul,ol,p,h1,h2,h3,dl,dt,dd,li,input,textarea,button{margin:0;padding:0; word-break:break-all;}
+ul,li,dl,dt,dd{list-style:none;}
+a,a:visited{text-decoration:none;}
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);margin: 0;padding: 0;}
+input,textarea{-webkit-appearance:none;-webkit-border-radius:0;}
+img{ vertical-align:middle;}
+.none{ display:none!important;}
+html,body{
+    width:100%;   
+}
+.module1{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.lists{
+    width: 1000%;
+    height: 122px;
+    overflow: hidden;
+    position: relative;
+    left: -140%;
+}
+
+.one{
+    left:0;
+}
+
+.lists li{
+    width: 7%;
+    height:110px;
+    float: left;
+      
+}
+.lists li:first-child{
+    margin-left: 1.5%;
+}
+
+
+.lists .slidemodule{
+     padding: 0px 10px;
+      border-radius: 4px;
+    background: url('/Content/images/square/bg_square.png') no-repeat center;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    margin: 6px 5px;
+    position: relative;
+    box-shadow:-1px 0 1px rgba(0,0,0,.1), /*◊Û±ﬂ“ı”∞*/  
+    1px 0 1px rgba(0,0,0,.1), /*”“±ﬂ“ı”∞*/  
+    0 -1px 1px rgba(0,0,0,.1), /*∂•≤ø“ı”∞*/  
+    0 1px 1px rgba(0,0,0,.1); /*µ◊±ﬂ“ı”∞*/ 
+}
+.lists .tab_now {
+   height:120px; 
+}
+.tab_now .slidemodule{
+    margin: 1px 14px;
+}
+.tab_now .module_td1 {
+    padding-top :10px;
+}
+.point{
+    margin: 7px auto;
+    width: 52px;
+    height: 7px;
+    position: relative;
+}
+.point li{
+    width: 5px;
+    height: 5px;
+    line-height: 7px;
+    border-radius: 50%;
+    margin: 0 2.5px;
+    /*display: inline-block;*/
+    background-color: #ffc500;
+    position: relative;
+    top: 1px;
+    float: left;
+    display: none;
+}
+.point .now{
+    width: 7px;
+    height: 7px;
+    line-height: 7px;
+    background-color: #ff6c5c;
+    position: relative;
+    top: 0;
+}

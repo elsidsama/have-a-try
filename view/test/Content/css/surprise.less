@@ -1,0 +1,175 @@
+html{}
+body,ul,ol,p,h1,h2,h3,dl,dt,dd,li,input,textarea,button{margin:0;padding:0; word-break:break-all;}
+body{text-align:left;font-family: "Helvetica Neue",Helvetica,"Lucida Grande",Arial,"Hiragino Sans GB","Î¢ÈíÑÅºÚ","WenQuanYi Micro Hei",STHeiti,SimSun,sans-serif; background-color:#FFF;font-size-adjust:none;-webkit-text-size-adjust:none;width: 100%;}
+ul,li,dl,dt,dd{list-style:none;}
+a,a:visited{text-decoration:none;}
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);margin: 0;padding: 0;}
+input,textarea{-webkit-appearance:none;-webkit-border-radius:0;}
+img{ vertical-align:middle;}
+.none{ display:none!important;}
+body{-webkit-text-size-adjust:none;font-family: "Microsoft YaHei";margin: 0 auto;max-width: 750px;background-color: #f8f8f8;display: none;}
+
+@rem:1rem/40;
+.banner_box{
+  width: 100%;
+  background-color: #ffffff;
+  .main_title{
+    .title{
+      padding: 30*@rem 15*@rem 0 15*@rem;
+      font-size: 48*@rem;
+      color: #333333;
+      font-weight: bolder;
+    }
+    .desc{
+      padding: 10*@rem 15*@rem 0 15*@rem;
+      font-size: 26*@rem;
+      color: #333333;
+      line-height: 68*@rem;
+    }
+  }
+}
+.btn_box{
+  width: 100%;
+  height: auto;
+  margin-top: 35*@rem;
+  .main_btn{
+    display: block;
+    margin: 0 30*@rem;
+    height: 100*@rem;
+    line-height: 100*@rem;
+    text-align: center;
+    background-color: #ff6c63;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 36*@rem;
+  }
+  .sub_btn{
+    font-size: 24*@rem;
+    color: #888888;
+    line-height: 26*@rem;
+    height: 26*@rem;
+    margin: 12*@rem auto;
+    display: block;
+    width: 110*@rem;
+    text-align: center;
+    border-bottom: 1px solid #555555;
+  }
+}
+.records{
+  margin: 9px 15px;
+  .rec_title{
+    color: #888888;
+    font-size: 24*@rem;
+    line-height: 68*@rem;
+  }
+  ul{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    li{
+      width: 100%;
+      height: 70*@rem;
+      float: left;
+      overflow: hidden;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 15*@rem 0;
+      position: relative;
+      img{
+        width: 70*@rem;
+        height: 70*@rem;
+        float: left;
+        border-radius: 4px;
+        border: 1px solid #bababa;
+        margin-right: 20*@rem;
+      }
+      .user_name{
+        float: left;
+        font-size: 30*@rem;
+        color: #333333;
+        font-weight: 600;
+        line-height: 44*@rem;
+        width: 520*@rem;
+      }
+      .bag_desc{
+        color: #888888;
+        font-size: 20*@rem;
+        line-height: 22*@rem;
+        float: left;
+        width: 520*@rem;
+      }
+      .price{
+        font-size: 26*@rem;
+        color: #333333;
+        position: absolute;
+        top: 0.45rem;
+        right: 0;
+        em{
+          color: #ff6c63;
+          font-style: normal;
+        }
+      }
+      .lucky_icon{
+        display: block;
+        font-size: 20*@rem;
+        font-weight: 600;
+        position: absolute;
+        right: 0;
+        bottom:10*@rem;
+        height: 36*@rem;
+        line-height: 36*@rem;
+        i{
+          display: inline-block;
+          position: absolute;
+          top: 0*@rem;
+        }
+      }
+      .icon_1{
+        color: #ffc400;
+        i{
+          background: url("../images/hg0407.png") no-repeat center;
+          width: 36*@rem;
+          height: 35*@rem;
+          background-size: contain;
+          left: -38*@rem;
+        }
+      }
+      .icon_2{
+        color: #63349d;
+        i{
+          background: url("../images/zs0407.png") no-repeat center;
+          width: 34*@rem;
+          height: 35*@rem;
+          background-size: contain;
+          left: -38*@rem;
+        }
+      }
+      .icon_3{
+        color: #ff7800;
+        i{
+          background: url("../images/star0407.png") no-repeat center;
+          width: 36*@rem;
+          height: 35*@rem;
+          background-size: contain;
+          left: -38*@rem;
+        }
+      }
+    }
+  }
+}
+.Rule{
+  padding: 20*@rem 30*@rem 12*@rem 30*@rem;
+  .rule_title{
+    font-size: 24*@rem;
+    color: #888888;
+    line-height: 64*@rem;
+  }
+  .rule_list{
+    font-size: 20*@rem;
+    color: #888888;
+    line-height: 30*@rem;
+    em{
+      font-style: normal;
+      color: #555555;
+    }
+  }
+}

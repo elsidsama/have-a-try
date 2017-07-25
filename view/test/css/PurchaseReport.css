@@ -1,0 +1,180 @@
+body,
+ul,
+ol,
+p,
+h1,
+h2,
+h3,
+dl,
+dt,
+dd,
+li,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+}
+body {
+  text-align: left;
+  font-family: "Helvetica Neue", Helvetica, "Lucida Grande", Arial, "Hiragino Sans GB", "΢���ź�", "WenQuanYi Micro Hei", STHeiti, SimSun, sans-serif;
+  background-color: #FFF;
+  font-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  width: 100%;
+}
+ul,
+li,
+dl,
+dt,
+dd {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  padding: 0;
+}
+input,
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+img {
+  vertical-align: middle;
+}
+.none {
+  display: none!important;
+}
+.no-scroll {
+  overflow: hidden;
+}
+body {
+  background-color: #ffffff;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  max-width: 750px;
+  margin: 0 auto;
+  -webkit-text-size-adjust: 100% !important;
+  display: none;
+}
+section {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+section .round_mod {
+  width: 100%;
+  background-color: #1aa97b;
+  height: 14.45rem;
+  padding-top: 0.9rem;
+  overflow: hidden;
+}
+section .round_mod .round_title {
+  line-height: 1rem;
+  display: block;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+section .round_mod .canvas_R {
+  position: absolute;
+  left: 50%;
+  margin-left: -193px;
+  top: 3.4rem;
+}
+section .round_mod .percent_box {
+  width: 9.65rem;
+  height: 9.65rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -4.825rem;
+  top: 3.4rem;
+}
+section .round_mod .percent_box .text_top {
+  font-size: 3.55rem;
+  color: #ffffff;
+  text-align: center;
+  padding: 2.375rem 0 0.875rem 0;
+  height: 3.55rem;
+}
+section .round_mod .percent_box .text_bottom {
+  font-size: 0.75rem;
+  color: #ffffff;
+  text-align: center;
+}
+section .table_mod {
+  padding: 0 0.75rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+section .table_mod .table_title {
+  font-size: 0.75rem;
+  color: #333333;
+  width: 100%;
+  display: block;
+  margin: 1rem 0;
+  text-align: center;
+}
+section .table_mod .left_list {
+  display: block;
+  width: 1.8rem;
+  height: 8.625rem;
+  float: left;
+  overflow: hidden;
+}
+section .table_mod .left_list li {
+  width: 100%;
+  font-size: 0.5rem;
+  color: #333333;
+  height: 0.5rem;
+  overflow: hidden;
+  float: left;
+  margin-top: 0.85rem;
+  text-align: center;
+}
+section .table_mod .left_list li:first-child {
+  margin-top: 0rem;
+}
+section .table_mod .table_body {
+  width: 15.4rem;
+  height: 8.375rem;
+  margin-top: 0.25rem;
+  float: left;
+  overflow: hidden;
+}
+section .table_mod .table_body .table_canvas {
+  float: left;
+  position: relative;
+  left: 0.125rem;
+}
+section .table_mod .bottom_list {
+  width: 17.5rem;
+  height: 0.8rem;
+  float: right;
+  right: -0.25rem;
+  position: relative;
+}
+section .table_mod .bottom_list li {
+  display: block;
+  float: left;
+  color: #555555;
+  text-align: right;
+  width: 2.5rem;
+  height: 100%;
+  font-size: 0.45rem;
+  line-height: 0.8rem;
+}
+section .table_mod .bottom_list li:last-child {
+  position: relative;
+}

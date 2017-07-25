@@ -1,0 +1,585 @@
+﻿.ins-order-box {
+    padding: 0 15px;
+}
+
+.ins-order-div {
+    width: 100%;
+    margin-top: 10px;
+    background-color: white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #333333;
+}
+
+.ins-order-td1 {
+    border-bottom: 1px solid #ccc;
+    height: 35px;
+    padding-left: 15px;
+}
+
+    .ins-order-td1 span.head {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+.ins-order-td2 {
+    width: 80px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 15px;
+    color: red;
+}
+
+.ins-tdstatus {
+    float: right;
+    font-size: 14px;
+    margin-right: 15px;
+    margin-top: 4px;
+    color: red;
+}
+
+.ins-order-td3 {
+    height: 30px;
+    width: 140px;
+    padding-left: 15px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.ins-order-td31 {
+    width: 50%;
+}
+
+.ins-order-td3 img {
+    margin-bottom: 3px;
+}
+
+.ins-order-td3 span {
+    margin-left: 8px;
+}
+
+.ins-order-td4 {
+    padding-right: 15px;
+    width: 120px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.ins-order-td5 {
+    color: #666666;
+    font-size: 14px;
+}
+
+.ins-order-td6 {
+    height: 20px;
+    padding-left: 15px;
+    font-size: 12px;
+    color: #888888;
+}
+
+.ins-order-td61 {
+    height: 1px;
+}
+
+.ins-order-td7 {
+    border-top: 1px solid #ccc;
+    text-align: right;
+    padding-right: 15px;
+    height: 40px;
+}
+
+.ins-order-td8 {
+    border-bottom: 1px solid #ccc;
+    height: 10px;
+    padding-left: 15px;
+    font-size: 12px;
+    color: #888888;
+}
+
+.ins-order-btn {
+    color: #1aa97b;
+    background-color: white;
+    padding: 5px 25px 3px 25px;
+    border: 1px solid #1aa97b;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.ins-order-btn1 {
+    color: #666666;
+    background-color: white;
+    padding: 5px 25px 3px 25px;
+    border: 1px solid #666666;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+/*航班信息*/
+.flightBox {
+    padding: 5px 15px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.ins-flight-td1 {
+    width: 80px;
+    text-align: center;
+}
+
+.ins-flight-td2 {
+    width: 120px;
+    padding-left: 10px;
+    height: 30px;
+}
+
+    .ins-flight-td2 img {
+        /*margin-bottom:3px;*/
+    }
+
+    .ins-flight-td2 span {
+        padding: 5px 0;
+        margin-left: 8px;
+        color: #888888;
+    }
+
+.ins-flight-td3 {
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ins-flight-td4 {
+    text-align: center;
+    color: black;
+    font-weight: 200;
+}
+
+.ins-flight-td5 {
+    /*height:40px;*/
+}
+
+.flightTip {
+    padding: 5px 8px 5px 8px;
+    background-color: #f4f4f4;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #666;
+    border: 1px solid #eeeeee;
+    font-size: 12px;
+}
+
+.ins-flight-t1 {
+    background: url("/Content/images/delay/icon_sj.png") no-repeat;
+    width: 15px;
+    height: 10px;
+    background-size: 15px;
+    margin-left: 30px;
+}
+/*众筹人员*/
+.raiseFri {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+.raisetitle {
+    text-align: left;
+    color: #333333;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.raisetitle2 {
+    text-align: center;
+    color: #888888;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.raiseFri table {
+    width: 100%;
+    margin: 8px 0;
+}
+
+.ins-list-d tr {
+    width: 100%;
+}
+
+.ins-flight-tippic img {
+    /*margin-bottom:5px;*/
+}
+
+.ins-flight-tip {
+    line-height: 18px;
+    padding-left: 10px;
+    font-size: 13px;
+    color: #888888;
+}
+
+.ins-flightBox-info {
+    padding-top: 5px;
+    padding-bottom: 2px;
+    font-size: 14px;
+}
+
+.ins-flight-sp {
+    text-align: center;
+    font-size: 12px;
+    background-color: #dedede;
+}
+
+
+.shareDiv_img {
+    height: 100vh;
+    width: 100vw;
+}
+
+.shareInfo {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.shareInfo2 {
+    margin: 0 auto;
+    width: 30%;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    color: #333333;
+    padding: 5px 0;
+}
+
+
+.shareInfo span {
+    font-size: 1rem;
+    color: #333333;
+}
+
+.ins-to-detail {
+    font-size: 12px;
+    width: 100%;
+    border-top: dashed 1px #dedede;
+    display: none;
+    padding: 5px 10px;
+}
+/*订单详情页*/
+.ins-od-head {
+    background-color: #1aa97b;
+    width: 100%;
+    display: table;
+}
+
+    .ins-od-head div.ins-od-tip {
+        width: 200px;
+        float: left;
+        margin: 25px 0 25px 25px;
+        margin-top: 45px;
+        color: white;
+        font-size: 16px;
+    }
+
+    .ins-od-head img {
+        float: right;
+        position: absolute;
+        right: 0;
+        margin: 25px 25px 25px 0;
+    }
+
+.ins-od-t1 {
+    font-size: 14px;
+    color: #888888;
+}
+
+ins-od-td2 {
+    width: 70px;
+}
+
+.ins-od-tab {
+    color: #666666;
+    text-align: left;
+    font-size: 14px;
+    padding: 0px;
+}
+
+.ins-od-td3 {
+    font-size: 12px;
+    color: #888888;
+    height: 25px;
+}
+
+.ins-od-oper {
+    width: 100%;
+    text-align: right;
+    padding-top: 8px;
+}
+
+.ins-share-tip {
+    width: 50px;
+    height: 50px;
+    background: url("../images/delay/icon_intro.png") no-repeat;
+    background-size: 50px 50px;
+    position: fixed;
+    top: 20px;
+    z-index:999;
+    right: 0;
+}
+
+.ins-share-msg {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    filter: Alpha(opacity=60);
+    opacity: 0.6;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+#sharemsg {
+    width: 94%;
+    height: 96%;
+    position: fixed;
+    padding: 30px 10px 10px 10px;
+    background-color: white;
+    top: 10px;
+    left: 3%;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 30px;
+    display: none;
+    z-index: 999;
+}
+
+.ins-share-content {
+    width: 100%;
+    height: 86%;
+    overflow: auto;
+}
+
+.ins-share-btn {
+    width: 90%;
+    padding: 5px 0px;
+    margin: 0 auto;
+    font-size: 16px;
+    border: none;
+    background-color: #1aa97b;
+    color: white;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.ins-share-close {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 15px;
+    right: 2px;
+}
+
+.ins-inslist-tab td {
+    color: #888888;
+}
+
+.ins-inslist-tab input {
+    border-color: #888888;
+    color: #888888;
+}
+/*保单凭证详情页*/
+.ins-insdetail-box {
+    padding: 20px 15px;
+}
+
+.ins-insdetail-head {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ins-insdetail-policyno {
+    width: 100%;
+    text-align: right;
+    font-weight: bold;
+    color: #666666;
+}
+
+.ins-insdetail-intro {
+    color: #888888;
+    margin-top: 20px;
+}
+
+.ins-insdetail-tab {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+    .ins-insdetail-tab span {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+.ins-insdetail-td1 {
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 3px;
+}
+
+.ins-insdetail-rule {
+    margin-top: 5px;
+}
+
+    .ins-insdetail-rule td {
+        border: 1px solid #888888;
+        text-align: center;
+    }
+/*理赔信息*/
+.ins-claim-box {
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.ins-claim-td1 {
+    border-bottom: 1px solid #dedede;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.ins-claim-td2 {
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.ins-claim-td3 {
+    text-align: center;
+}
+
+    .ins-claim-td3 span {
+        color: #1aa97b;
+        font-size: 18px;
+    }
+
+    .ins-claim-td3 img {
+        margin: 0 30px;
+    }
+
+.ins-claim-td4 {
+    line-height: 25px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.ins-claim-td5 {
+    border-bottom: 1px solid #dedede;
+}
+
+.ins-claim-td6 {
+    text-align: center;
+}
+
+    .ins-claim-td6 span {
+        padding: 3px;
+        border: 1px dashed #ff6c60;
+        color: #ff6c60;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+.ins-claim-td7 {
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.ins-claim-td8 {
+    border-bottom: 1px solid #dedede;
+    font-size: 16px;
+    padding: 5px 0;
+    position: relative;
+}
+
+    .ins-claim-td8 span {
+        color: #888888;
+        font-size: 16px;
+    }
+
+        .ins-claim-td8 span.my {
+            color: #ff6c60;
+            font-size: 2px;
+            /*border:1px solid #ff6c60;*/
+            /*padding:2px 2px;*/
+            -moz-border-radius: 8px;
+            -webkit-border-radius: 8px;
+            border-radius: 8px;
+        }
+
+.ins-claim-tab tr:last-child td {
+    border: none;
+}
+
+
+.jz_table_detail {
+    width: 33%;
+    position: relative;
+    text-align: center;
+}
+
+.jz_table_detail2 {
+    width: 33%;
+    position: relative;
+    text-align: center;
+}
+
+.jz_right_line {
+}
+
+
+.jz_table_detail:after {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    content: "";
+    color: #555555;
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background: #999999;
+}
+
+
+.jz_table_txt {
+    color: #555555;
+    font-size: 15px;
+}
+
+
+.jz_table_raise {
+    color: #333333;
+    font-size: 16px;
+     font-weight:600;
+}
+.jz_table_raise2 {
+    color: #333333;
+    font-size: 14px;
+     font-weight:600;
+}
+
+.jz_dt {
+   
+}

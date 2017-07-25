@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta content="telephone=no" name="format-detection">
+    <title>我的众筹</title>
+    <meta name="keywords" content="众众保" />
+    <meta name="description" content="众众保,保险新玩法,社交" />
+    <link href="./css/sevendata.css" rel="stylesheet" />
+    <script src="./js/jquery-1.8.3.min.js"></script>
+</head>
+<script>
+    var data = [{ "flightdate": "2017-10-17", "flightstatus": "取消", "delayminute": 70 }, { "flightdate": "2017-04-15", "flightstatus": "到达", "delayminute": -4 }, { "flightdate": "2017-04-14", "flightstatus": "到达", "delayminute": 22 }, { "flightdate": "2017-04-13", "flightstatus": "到达", "delayminute": 14 }, { "flightdate": "2017-04-12", "flightstatus": "到达", "delayminute": 60 }, { "flightdate": "2017-04-11", "flightstatus": "到达", "delayminute": 28 }, { "flightdate": "2017-04-10", "flightstatus": "到达", "delayminute": 15 }];
+    var percents = 50;
+    $(document).ready(function () {
+        var canva_body = document.getElementById("round_canvas");
+        var cxt = canva_body.getContext("2d");
+        cxt.beginPath();
+        cxt.arc(193, 193, 190, 0, 2*Math.PI, false);
+        cxt.lineWidth = 3;
+        cxt.strokeStyle = "#dedede";
+        cxt.stroke();
+        cxt.closePath();
+        $(".text_top").text(percents + "%");
+        round_draw(percents);
+        data_load(data);
+    })
+    function round_draw(percent){
+        var widths = $(window).width();
+        if (widths > 750) {
+            widths = 750;
+        }
+        var canva_body = document.getElementById("round_canvas");
+        var cxt = canva_body.getContext("2d");
+        cxt.beginPath();
+        var r = parseInt(widths / 750 * 193);
+        var radius = percent/50-0.5;
+        cxt.arc(193, 193, 190, 1.5 * Math.PI, radius * Math.PI, false);
+        cxt.lineWidth = 5;
+        cxt.strokeStyle = "#ffffff";
+        cxt.stroke();
+        cxt.closePath();
+        var widths = $(window).width();
+        if (widths > 750) {
+            widths = 750;
+        }
+        var percents=widths/750;
+        $(".canvas_R").css("transform","scale("+percents+")");
+        $(".canvas_R").css("margin-top", "-" + parseInt((1 - percents) * 193) + "px");
+    }
+    function data_load(data) {
+        if (data.length > 0) {
+            for (var a = 0, l = data.length; a < l; a++) {
+                (function (arg) {
+                    if (arg > 6) {
+                        return;
+                    }
+                    var flight_obj = data[arg], date_text = "";
+                    var dates = new Date(flight_obj.flightdate);
+                    (dates.getMonth() + 1) > 9 ? date_text += (dates.getMonth() + 1) : date_text += "0" + (dates.getMonth() + 1);
+                    date_text += "-";
+                    dates.getDate() > 9 ? date_text += dates.getDate() : date_text += "0" + dates.getDate();
+                    $($(".bottom_list li")[arg]).text(date_text);
+                    var names = ".square_" + arg;
+                    var time=flight_obj.delayminute;
+                    if (flight_obj.flightstatus == "到达") {
+                        var square,text;
+                        var widths = $(window).width();
+                        if (widths > 750) {
+                            widths = 750;
+                        }
+                        if (time < 0) {
+                            square = $($(names)[1]);
+                            var min = 0 - time;
+                            if (min > 59) {
+                                text = "-"+ parseInt(min / 60) + "h" + min % 60 + "m";
+                            } else {
+                                text = "-"+min % 60 + "m";
+                            }
+                            square.find(".square_text").text(text);
+                            square.find(".cancel_btn").hide();
+                            square.show();
+                            var height = parseInt(widths / 750 / 60 * 50 * min);
+                            square.find(".square_body").animate({ "height": height + "px" },"slow");
+                        } else {
+                            square = $($(names)[0]);
+                            if (time > 59) {
+                                text = parseInt(time / 60) + "h" + time % 60 + "m";
+                            } else {
+                                text = time % 60 + "m";
+                            }
+                            square.find(".square_text").text(text);
+                            square.find(".cancel_btn").hide();
+                            square.show();
+                            var height = parseInt(widths / 750 / 60 * 66 * time);
+                            square.find(".square_body").animate({ "height": height + "px" },"slow");
+                        }
+                    } else {
+                        $($(names)[0]).find(".square_text").hide();
+                        $($(names)[0]).find(".square_body").hide();
+                        $($(names)[0]).show();
+                    }
+                })(a);
+            }
+        }
+    }
+</script>
+<body>
+<section>
+<div class="round_mod">
+        <span class="round_title">Mu2520延误分析</span>
+        <canvas id="round_canvas" class="canvas_R" width="386" height="386"></canvas>
+        <div class="percent_box">
+        <p class="text_top"></p>
+        <p class="text_bottom">历史延误率</p>
+        </div>
+        </div>
+        <div class="table_mod">
+        <span class="table_title">最近7天延误情况</span>
+        <ul class="left_list">
+        <li>延误4h</li>
+        <li>延误3h</li>
+        <li>延误2h</li>
+        <li>延误1h</li>
+        <li>准点</li>
+        <li>提前1h</li>
+        </ul>
+        <div class="table_body">
+        <div class="body_top">
+        <div class="square square_0">
+        <div class="square_text">
+        2h38m
+</div>
+<div class="square_body">
+        </div>
+        <a class="cancel_btn">取消</a>
+        </div>
+        <div class="square square_1">
+        <div class="square_text">
+        2h38m
+</div>
+<div class="square_body">
+        </div>
+        <a class="cancel_btn">取消</a>
+        </div>
+        <div class="square square_2">
+        <div class="square_text">
+        2h38m
+</div>
+<div class="square_body">
+        </div>
+        <a class="cancel_btn">取消</a>
+        </div>
+        <div class="square square_3">
+        <div class="square_text">
+        2h38m
+</div>
+<div class="square_body">
+        </div>
+        <a class="cancel_btn">取消</a>
+        </div>
+        <div class="square square_4">
+        <div class="square_text">
+        2h38m
+</div>
+<div class="square_body">
+        </div>
+        <a class="cancel_btn">取消</a>
+        </div>
+        <div class="square square_5">
+        <div class="square_text">
+        2h38m
+</div>
+<div class="square_body">
+        </div>
+        <a class="cancel_btn">取消</a>
+        </div>
+        <div class="square square_6">
+        <div class="square_text">
+        2h38m
+</div>
+<div class="square_body">
+        </div>
+        <a class="cancel_btn">取消</a>
+        </div>
+        <div class="line line_1"></div>
+        <div class="line line_2"></div>
+        <div class="line line_3"></div>
+        <div class="line line_4"></div>
+        </div>
+        <div class="body_bottom">
+        <div class="square square_0">
+        <div class="square_body">
+        </div>
+        <div class="square_text">
+        2h38m
+</div>
+</div>
+<div class="square square_1">
+        <div class="square_body">
+        </div>
+        <div class="square_text">
+        2h38m
+</div>
+</div>
+<div class="square square_2">
+        <div class="square_body">
+        </div>
+        <div class="square_text">
+        2h38m
+</div>
+</div>
+<div class="square square_3">
+        <div class="square_body">
+        </div>
+        <div class="square_text">
+        2h38m
+</div>
+</div>
+<div class="square square_4">
+        <div class="square_body">
+        </div>
+        <div class="square_text">
+        2h38m
+</div>
+</div>
+<div class="square square_5">
+        <div class="square_body">
+        </div>
+        <div class="square_text">
+        2h38m
+</div>
+</div>
+<div class="square square_6">
+        <div class="square_body">
+        </div>
+        <div class="square_text">
+        2h38m
+</div>
+</div>
+<div class="line"></div>
+        </div>
+        </div>
+        <ul class="bottom_list">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        </ul>
+        </div>
+        </section>
+        <script src="./js/adjust.js" type="text/javascript"></script>
+</body>
+</html>
